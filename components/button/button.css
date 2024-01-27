@@ -1,0 +1,63 @@
+.button-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    gap: 20px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 8px 32px;
+    border: 1px solid transparent;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px; 
+    letter-spacing: -0.35px;
+    text-align: center;
+    transition: all .3s ease;
+}
+
+.btn-primary {
+    background:  #36F;
+    box-shadow: 0px 2px 4px 0px rgba(96, 97, 112, 0.16), 0px 0px 1px 0px rgba(40, 41, 61, 0.04);
+    color:  #FFF;
+}
+
+.btn-secondary{
+    gap: 4px;
+    background:  #FFF;
+    box-shadow: 0px 2px 4px 0px rgba(96, 97, 112, 0.16), 0px 0px 1px 0px rgba(40, 41, 61, 0.04);
+    color:  #36F;
+    border: 1px solid #36F;
+}
+
+.btn:hover {
+    opacity: .6;
+    scale: 0.9;
+}
+
+.btn-main {
+    padding: 15px 0;
+}
+
+.btn-delete {
+    color: #FF4945;
+    background: #FFECEB;
+}
+
+.btn .disabled {
+
+}
+
+.btn-default {
+    background: #EDF1FD;
+    color: #3365FC;
+}

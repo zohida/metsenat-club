@@ -44,7 +44,8 @@ img{
 }
 
 .container{
-    /* width: ; */
+    max-width: 1240px;
+    width: 100%;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -73,6 +74,7 @@ body{
     font-family: "Rubik", "Arial", sans-serif;
     font-weight: 500;
     font-size: 16px;
+    background-color: #F5F5F7;
 }
 
 .site-main{
