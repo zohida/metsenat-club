@@ -53,8 +53,18 @@
     background: #FFECEB;
 }
 
-.btn .disabled {
+button:disabled{
+    color: #B2B7C1;
+    pointer-events: none;
+    border: 1px solid #B2B7C1;
+}
 
+button:disabled .btn-svg {
+    fill: #B2B7C1;
+}
+
+button:disabled .btn-svg path {
+    fill: #B2B7C1;
 }
 
 .btn-default {

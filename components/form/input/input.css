@@ -1,5 +1,36 @@
+.search {
+    position: relative;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    max-width: 284px;
+    width: 100%;
+}
+
 input {
     outline: none;
     border: 1px solid transparent;
     cursor: pointer;
+}
+
+.search-input {
+    border-radius: 5px;
+    background: #E8E8E8;
+    padding: 10px 0;
+    padding-left: 38px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.search-input::placeholder {
+    color: #B1B1B8;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.search svg {
+    position: absolute;
+    top: 9px;
+    left: 10px;
 }

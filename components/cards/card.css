@@ -1,0 +1,40 @@
+.cards-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.card-item {
+    display: flex;
+    align-items: center;
+    max-width: 381px;
+    width: 100%;
+    gap: 16px;
+    border-radius: 8px;
+    border: 1px solid rgba(46, 91, 255, 0.08);
+    background: #FFF;
+    padding: 24px;
+}
+
+.card-status {
+    margin: 0;
+    color:  #7A7A9D;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px; 
+    margin-bottom: 6px;
+}
+
+.card-amount {
+    margin: 0;
+    color: #2E384D;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px; 
+}
+
+.card-currency {
+    color: #B2B7C1;
+}
