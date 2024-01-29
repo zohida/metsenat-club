@@ -1,0 +1,35 @@
+.sponsor-info {
+    padding: 30px 0;
+    background:#fefefee4;
+    margin-bottom: 40px;
+}
+
+.one-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+}
+
+.btn-exit {
+    background-color: transparent;
+    border: 1px solid transparent;
+    outline: none;
+    width: 28px;
+    height: 28px;
+}
+
+.sponsor-name {
+    margin: 0;
+    color:  #28293D;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.footer-inner {
+   position: absolute;
+   bottom: 5px;
+   right: 430px;
+}

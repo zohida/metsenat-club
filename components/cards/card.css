@@ -38,3 +38,203 @@
 .card-currency {
     color: #B2B7C1;
 }
+
+.homiy-info {
+    padding: 48px 0 28px;
+}
+
+.personal-quiz {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.homiy-id {
+    margin-left: 16px;
+}
+
+.quiz {
+    color: #B1B1B8;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1.125px;
+    text-transform: uppercase;
+}
+
+.homiy-name {
+    margin-left: 33px;
+    margin-right: 62px;
+}
+
+.homiy-tel {
+    margin-left: 200px;
+    margin-right: 64px;
+}
+
+.homiy-money {
+    margin-right: 34px;
+}
+
+.homiy-usage {
+    margin-right: 53px;
+}
+
+.homiy-data {
+    margin-right: 94px;
+}
+
+.homiy-status {
+    margin-right: 56px;
+}
+
+.homiy-card {
+    display: flex;
+    align-items: center;
+    padding: 22px 48px 22px 16px ;
+    border-radius: 8px;
+    border: 1px solid rgba(46, 91, 255, 0.08);
+    background: #FFF;
+    margin-bottom: 12px;
+}
+
+.info {
+    margin: 0;
+    color: #1D1D1F;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.id-homiy {
+    margin-right: 33px;
+}
+
+.name-homiy {
+    margin-right: 64px;
+}
+
+.tel-homiy {
+    color: #1D1D1F;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px; 
+    margin-right: 54px;
+}
+
+.money-homiy {
+    color: #2E384D;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    margin-right: 97px;
+}
+
+.currency {
+    color: #B2B7C1;
+}
+
+.usage-homiy {
+    margin-right: 88px;
+}
+
+.data-homiy {
+    color: #1D1D1F;
+    text-align: center;
+    font-family: Rubik;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    margin-right: 88px;
+}
+
+.status-homiy {
+    margin-right: 80px;
+}
+
+.new {
+    color: #5BABF2;
+    text-align: center;
+    font-family: Rubik;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 146.667% */
+}
+
+.sponsor-card {
+    position: relative;
+    z-index: 5;
+    max-width: 793px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 12px;
+    border: 1px solid #EBEEFC;
+    background: #FFF;
+    box-shadow: 0px 5px 40px 0px rgba(0, 0, 0, 0.03);
+    padding: 32px;
+}
+
+.sponsor-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.sponsor-card-title {
+    margin: 0;
+    color:  #28293D;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.sponsor-card-body {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 24px;
+}
+
+.card-subtitle-wrapper {
+    max-width: 163px;
+    width: 100%;
+}
+
+.sponsor-card-subtitle {
+    margin: 0;
+    color: #212121;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 130%; /* 20.8px */
+    letter-spacing: -0.16px;
+}
+
+.sponsor-card-footer {
+    display: flex;
+    align-items: center;
+    gap: 227px;
+}
+
+.sponsor-tel,
+.sponsor-amount {
+    margin: 0;
+    color: #B5B5C3;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1.125px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.sponsor-money,
+.sponsor-number {
+    margin: 0;
+    color: #212121;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 130%; /* 20.8px */
+    letter-spacing: -0.16px;
+}
