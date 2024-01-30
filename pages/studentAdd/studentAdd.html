@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Add page</title>
+    <link rel="stylesheet" href="../../components/button/button.css">
+    <link rel="stylesheet" href="../../components/header/header.css">
+    <link rel="stylesheet" href="../../components/form/input/input.css">
+    <link rel="stylesheet" href="./studentAdd.css">
+    <link rel="stylesheet" href="../../css/main.css">
+</head>
+<body>
+    
+    <header class="site-header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="#">
+                    <img src="../../images/logo.svg" alt="Logo"
+                    width="173" height="24">
+                </a>
+                <div class="header-profile-wrap">
+                    <button class="user-btn" type="button">
+                        <p class="header-user">Shohrux</p>
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="32" height="32" rx="4" fill="#00AE69"/>
+                            <path d="M20.621 25.38C19.243 26.118 17.669 26.54 15.998 26.54C14.328 26.54 12.755 26.12 11.377 25.38C8.401 26.162 6.069 28.015 5 32H27C25.931 28.014 23.599 26.161 20.621 25.38ZM16 24C20.418 24 24 20.418 24 16C24 11.582 20.418 8 16 8C11.582 8 8 11.582 8 16C8 20.418 11.582 24 16 24ZM21.349 18.667C20.364 20.635 18.351 22 16 22C13.649 22 11.636 20.635 10.651 18.667H21.349Z" fill="#F1F1F3"/>
+                        </svg>                            
+                    </button>
+                    <button class="exit-btn btn" id="exitBtn">
+                        <img src="../../images/exit-icon.svg" alt="Exit icon"
+                        width="32" height="32">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="student-add-box">
+        <div class="container">
+            <div class="student-info-wrap">
+                <button class="btn btn-exit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                        <path d="M22.1663 14H5.83301" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M13.9997 22.1667L5.83301 14L13.9997 5.83334" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <p class="add-student-text">Talaba qo‘shish</p>
+            </div>
+        </div>
+    </div>
+    
+    <main>
+        <section class="add-student">
+            <div class="container">
+                <div class="add-student-inner">
+                    <form class="form-student">
+                        <div class="form-wrapper">
+                            <label for="name">
+                                F.I.Sh. (Familiya Ism Sharif)
+                                <input class="input"
+                                type="text" 
+                                name="name" 
+                                id="name" 
+                                placeholder="Abdullayev Abdulla Abdulla o’g’li"
+                                autocomplete="off">
+                            </label>
+                            
+                            <div class="name-box">
+                                <label for="tel">
+                                    Telefon raqam
+                                    <input class="input"
+                                    type="tel" 
+                                    name="tel" 
+                                    id="tel" 
+                                    placeholder="+998 00 000-00-00"
+                                    autocomplete="off">
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <label for="university">
+                            OTM
+                            <input class="input"
+                            type="text" 
+                            name="university" 
+                            id="universiteti" 
+                            placeholder="O’zbekiston davlat jahon tillari universiteti"
+                            autocomplete="off">
+                        </label>
+                        
+                        <div class="form-wrapper2">
+                            <div class="name-box">
+                                <label for="type">
+                                    Talabalik turi
+                                    <input class="input"
+                                    type="text" 
+                                    name="type" 
+                                    id="type" 
+                                    placeholder="Bakalavr"
+                                    autocomplete="off">
+                                </label>
+                            </div> 
+                            
+                            <div class="name-box">
+                                <label for="amount">
+                                    Kontrakt summa
+                                    <input class="input"
+                                    type="number" 
+                                    name="amount" 
+                                    id="amount" 
+                                    placeholder="Summani kiriting"
+                                    autocomplete="off">
+                                </label>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-primary btn-added" id="addBtn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M19.9999 11.9999H4.00007" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 4V19.9999" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            Qo‘shish
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    
+</body>
+</html>

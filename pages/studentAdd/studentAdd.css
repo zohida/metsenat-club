@@ -1,0 +1,88 @@
+.student-add-box {
+    padding: 30px 0;
+    background:#fefefee4;
+    margin-bottom: 40px;
+}
+
+.student-info-wrap {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 16px;
+}
+
+.btn-exit {
+    background-color: transparent;
+    border: 1px solid transparent;
+    outline: none;
+    padding: 0;
+    width: 28px;
+    height: 28px;
+}
+
+
+.add-student-text {
+    margin: 0;
+    color:  #28293D;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.form-student {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    position: relative;
+}
+
+.add-student-inner {
+    max-width: 790px;
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid #EBEEFC;
+    background: #FFF;
+    box-shadow: 0px 5px 40px 0px rgba(0, 0, 0, 0.03);
+    padding: 28px;
+    margin: 0 auto;
+}
+
+.form-wrapper {
+    display: flex;
+    gap: 28px;
+}
+
+.form-wrapper .input:nth-child(2){
+    max-width: 353px;
+    width: 100%;
+}
+
+.form-wrapper2 {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    margin-bottom: 28px;
+}
+
+.name-box{
+    max-width: 353px;
+    width: 100%;
+}
+
+.form-student::after {
+    position: absolute;
+    display: block;
+    max-width: 734px;
+    width: 100%;
+    height: 2px;
+    background: #F5F5F7;
+    content: "";
+    bottom: 70px;
+}
+
+.btn-added {
+    max-width: 155px;
+    width: 100%;
+    text-align: right;
+}
