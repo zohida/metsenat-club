@@ -1,0 +1,15 @@
+.student-btn-wrap {
+    position: relative;
+}
+
+.student-btn {
+    max-width: 198px;
+    width: 100%;
+    position: absolute;
+    top: 24px;
+    right: 0;
+}
+
+.student-info {
+    margin-top: 46px;
+}

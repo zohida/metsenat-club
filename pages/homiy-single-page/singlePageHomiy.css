@@ -4,6 +4,10 @@
     margin-bottom: 40px;
 }
 
+main {
+    flex-grow: 1;
+}
+
 .one-info {
     display: flex;
     flex-direction: row;
@@ -20,6 +24,13 @@
     height: 28px;
 }
 
+.sponsor-card-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 20pxx;
+    margin-bottom: 194px;
+}
+
 .sponsor-name {
     margin: 0;
     color:  #28293D;
@@ -29,7 +40,7 @@
 }
 
 .footer-inner {
-   position: absolute;
+   position: fixed;
    bottom: 5px;
    right: 430px;
 }
