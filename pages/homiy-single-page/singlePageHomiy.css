@@ -27,8 +27,8 @@ main {
 .sponsor-card-wrap {
     display: flex;
     flex-direction: column;
-    gap: 20pxx;
-    margin-bottom: 194px;
+    gap: 20px;
+    margin-bottom: 40px;
 }
 
 .sponsor-name {
@@ -43,4 +43,9 @@ main {
    position: fixed;
    bottom: 5px;
    right: 430px;
+}
+
+.footer {
+    padding: 241px;
+    z-index: 3;
 }

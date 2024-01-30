@@ -1,0 +1,125 @@
+.student-btn-wrapper {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.single-student-info {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.sponsor-add-btn {
+    max-width: 197px;
+    width: 100%;
+}
+
+.main-info-box {
+    max-width: 180px;
+    width: 100%;
+    padding: 2px 11px;
+    background: #E5EBFF;
+    margin-bottom: 26.5px;
+    display: flex;
+    align-items: center;
+}
+
+main {
+    flex-grow: 1;
+}
+.main-study-box {
+    margin-top: 34.5px;
+    max-width: 250px;
+    width: 100%;
+    padding: 2px 11px;
+    background: #E5EBFF;
+    margin-bottom: 26.5px;
+    display: flex;
+    align-items: center;
+}
+
+.main-info-text {
+    margin: 0;
+    color: #36F;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1.125px;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 3;
+}
+
+.main-info-box::after {
+    position: absolute;
+    max-width: 726px;
+    width: 100%;
+    height: 1px;
+    flex-shrink: 0;
+    background-color: #E4E8F0;
+    content: "";
+}
+
+.main-study-box::after {
+    position: absolute;
+    max-width: 726px;
+    width: 100%;
+    height: 1px;
+    flex-shrink: 0;
+    background-color: #E4E8F0;
+    content: "";
+}
+
+.sponsor-card-info {
+    display: flex;
+    align-items: center;
+    gap: 62px;
+    margin-bottom: 24px;
+}
+
+.sponsor-add-card {
+    display: flex;
+    padding: 22px 48px 22px 15px;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid rgba(46, 91, 255, 0.08);
+    background: #FBFBFC;
+}
+
+.sponsor-id {
+    color: #1D1D1F;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px; 
+    margin-right: 32px;
+}
+
+.id-sponsor {
+    margin-right: 32px;
+}
+
+.sponsor-name {
+    color: #1D1D1F;
+    font-size: 15px;;
+    font-weight: 500;
+    margin-right: 140px;
+}
+
+.name-sponsor {
+    margin-right: 300px;
+}
+
+.sponsor-money {
+    color: #2E384D;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px; /* 157.143% */
+    margin-right: 110px;
+}
+
+.usage-sponsor {
+    margin-right: 66px;
+}
