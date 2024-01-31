@@ -13,3 +13,15 @@
 .student-info {
     margin-top: 46px;
 }
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 8;
+    opacity: 0.50;
+    background: #000;
+    flex-shrink: 0;
+}

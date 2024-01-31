@@ -64,3 +64,8 @@ label {
     letter-spacing: 1.125px;
     text-transform: uppercase;
 }
+
+.date {
+    max-width: 253px;
+    width: 100%;
+}

@@ -1,0 +1,160 @@
+.modal {
+    cursor: pointer;
+}
+
+.student-filter{
+    position: fixed;
+    border-radius: 12px;
+    background: #FFF;
+    max-width: 586px;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    transform: translate(-50%, -50%);
+    padding: 28px 32px;
+}
+
+.hidden {
+    display: none;
+}
+
+.filter-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.btn-close {
+    background-color: transparent;
+    border: 1px solid transparent;
+   outline: none;
+}
+
+.filter-title {
+    margin: 0;
+    color:  #28293D;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px; 
+}
+
+
+.filter-header::after {
+    position: absolute;
+    max-width: 530px ;
+    width: 100%;
+    height: 2px;
+    background: #F5F5F7;
+    content: "";
+    margin-top: 28px;
+    top: 25px;
+}
+
+.filter-body {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 50px;
+    position: relative;
+}
+
+.filter-body::after {
+    position: absolute;
+    max-width: 530px ;
+    width: 100%;
+    height: 2px;
+    background: #F5F5F7;
+    content: "";
+    top: 185px;
+}
+
+.filter-footer {
+    margin-top: 60px;
+    display: flex;
+    gap: 16px;
+}
+
+.filter-footer button:nth-child(1) {
+    max-width: 149px;
+    width: 100%;
+    margin-left: 156px;
+}
+
+.filter-footer button:nth-child(2) {
+    max-width: 209px;
+    width: 100%;
+}
+
+
+/* EDIT STUDENT MODAL */
+
+.student-edit{
+    position: fixed;
+    border-radius: 12px;
+    background: #FFF;
+    max-width: 586px;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    transform: translate(-50%, -50%);
+    padding: 28px 32px;
+}
+
+.filter-edit-body {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 50px;
+    position: relative;
+}
+
+.filter-sponsor-body {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 50px;
+    position: relative;
+}
+
+
+.filter-edit-body::after {
+    position: absolute;
+    max-width: 530px ;
+    width: 100%;
+    height: 2px;
+    background: #F5F5F7;
+    content: "";
+    top: 370px;
+}
+
+
+.filter-edit-footer {
+    position: relative;
+    right: 0;
+    max-width: 150px;
+    width: 100%;
+    margin-left: 380px;
+    margin-top: 56px;
+}
+
+ /* HOMIY QO'SHISH STYLE  */
+.saveBtn {
+    max-width: 150px;
+    width: 100%;
+}
+
+ .deleteBtn {
+    max-width: 209px;
+    width: 100%;
+ }
+
+ .sponsor-edit-footer {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-left: 155px;
+    margin-top: 60px;
+ }

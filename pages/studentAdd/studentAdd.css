@@ -82,7 +82,8 @@
 }
 
 .btn-added {
+    position: relative;
     max-width: 155px;
     width: 100%;
-    text-align: right;
+    margin-left: 579px;
 }
