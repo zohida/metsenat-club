@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 studentExitBtn.addEventListener('click', () => {
-    window.location.href = 'http://127.0.0.1:5500/pages/talabalar/talabalar.html';
+    window.location.href = 'http:/pages/talabalar/talabalar.html';
 })
 
 editBtn.addEventListener("click", () => {
