@@ -25,3 +25,26 @@
     background: #000;
     flex-shrink: 0;
 }
+
+.type-student {
+    margin-left: 120px;
+}
+
+.student-name {
+    margin-left: -30px;
+    max-width: 220px;
+    width: 100%;
+}
+
+.study-type {
+   margin-left: 0px;
+}
+
+.university-name {
+    margin-left: 70px;
+    margin-right: 160px;
+}
+
+.university {
+    margin-left: 10px;
+}
