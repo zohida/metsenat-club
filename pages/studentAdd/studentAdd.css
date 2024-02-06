@@ -87,3 +87,14 @@
     width: 100%;
     margin-left: 579px;
 }
+
+
+.msg {
+    position: absolute;
+    left: 16px;
+    font-size: 12px;
+    font-weight: 500;
+    color: red;
+    margin-top: 55px;
+    text-transform: uppercase;
+}

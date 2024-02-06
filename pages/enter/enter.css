@@ -1,0 +1,86 @@
+.sponsor-info-inner {
+    display: flex;
+    align-items: center;
+}
+
+.page {
+    max-width: 808px;
+    width: 100%;
+}
+
+.article {
+    max-width: 512px;
+    width: 100%;
+    padding-top: 48px;
+    padding-left: 72px;
+    background-color: #F5F5F7;
+}
+
+.president-word {
+   margin: 0;
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 30px;
+   position: relative;
+   z-index: 5;
+}
+
+.user-img {
+    margin-top: -18px;
+    margin-left: -60px;
+}
+
+.president-word-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+
+.user-info-box {
+    display: flex;
+    flex-direction: column;
+    margin-left: -35px;
+    margin-top: -56px;
+}
+
+.president-name {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 25.5px;
+}
+
+.president-degree {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 21px;
+}
+
+.article-quote {
+    position: relative;
+}
+
+.article-quote::before {
+    position: absolute;
+    display: inline-block;
+    background-image: url("./../../images/sign.png");
+    background-repeat: no-repeat;
+    width: 63px;
+    height: 41px;
+    content: "";
+    z-index: 3;
+    left: -24px;
+    top: -20px;
+}
+
+.article-quote::after{
+    position: absolute;
+    display: inline-block;
+    background-image: url("./../../images/sign2.png");
+    background-repeat: no-repeat;
+    width: 63px;
+    height: 41px;
+    content: "";
+    z-index: 3;
+    right: -29px;
+    bottom: 8px;
+}

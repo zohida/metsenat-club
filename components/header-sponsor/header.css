@@ -1,0 +1,98 @@
+.header {
+    padding: 24px 0;
+    background-color: #fff;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-link {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    color: #28293D;
+}
+
+.enter-btn {
+    display: flex;
+    align-items: center;
+    max-width: 68px;
+    width: 100%;
+    gap: 6px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    color: #28293D;
+}
+
+.sign-up {
+    max-width: 175px;
+    width: 100%;
+    padding: 8px 32px;
+    border: 2px solid #3366FF;
+    color: #3366FF;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    border-radius: 8px;
+}
+
+
+@media only  screen and (max-width:930px) {
+
+    .header-logo {
+        max-width: 200px;
+        width: 100%;
+    }
+    .nav-list {
+        gap: 20px;
+    }
+    
+
+    .sign-up {
+        max-width: 150px;
+        width: 100%;
+        padding: 8px;
+    }
+}
+
+
+@media only  screen and (max-width:750px) {
+
+    .nav-link {
+        font-size: 12px;
+    }
+    
+    .enter-btn {
+        font-size: 12px;
+    }
+
+    .sign-up {
+        max-width: 120px;
+        width: 100%;
+        padding: 8px;
+        font-size: 11px;
+    }
+}
+
+
+@media only  screen and (max-width:690px) {
+
+    .header-logo {
+        max-width: 160px;
+        width: 100%;
+    }
+
+    .nav-list {
+        gap: 10px;
+    }
+}

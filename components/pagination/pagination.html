@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagination</title>
+    <link rel="stylesheet" href="./pagination.css">
+    <link rel="stylesheet" href="./../../css/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="pagination-wrapper">
+            <p class="pagination-text">
+                Ko'rsatish
+            </p>
+
+            <div class="show-dropdown">
+                <div class="select">
+                    <span class="select-num" id="selectNum">10</span>
+                    <button id="paginationIcon">
+                        V
+                    </button>
+                </div>
+                <ul class="select-list hidden" id="selectList">
+                    <li class="select-item">10</li>
+                    <li class="select-item">20</li>
+                    <li class="select-item">30</li>
+                </ul>
+            </div>
+
+            <ul class="pagination-list">
+                <li class="paginatiion-item">
+                    <span><</span>
+                </li>
+                <li class="paginatiion-item">
+                    <span>1</span>
+                </li>
+                <li class="paginatiion-item">
+                    <span>2</span>
+                </li>
+                <li class="paginatiion-item">
+                    <span>...</span>
+                </li>
+                <li class="paginatiion-item"><span>9</span></li>
+                <li class="paginatiion-item">
+                    <span>10</span>
+                </li>
+                <li class="paginatiion-item">
+                    <span>></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="./pagination.js"></script>
+</body>
+</html>

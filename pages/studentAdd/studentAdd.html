@@ -40,10 +40,12 @@
         <div class="container">
             <div class="student-info-wrap">
                 <button class="btn btn-exit" id="studentExitBtn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                        <path d="M22.1663 14H5.83301" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M13.9997 22.1667L5.83301 14L13.9997 5.83334" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                            <path d="M22.1663 14H5.83301" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M13.9997 22.1667L5.83301 14L13.9997 5.83334" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
                 </button>
                 <p class="add-student-text">Talaba qo‘shish</p>
             </div>
@@ -54,27 +56,31 @@
         <section class="add-student">
             <div class="container">
                 <div class="add-student-inner">
-                    <form class="form-student">
+                    <form class="form-student" id="formStudent">
                         <div class="form-wrapper">
                             <label for="name">
                                 F.I.Sh. (Familiya Ism Sharif)
-                                <input class="input"
+                                <input 
+                                class="input"
+                                id="student-name"
                                 type="text" 
                                 name="name" 
                                 id="name" 
                                 placeholder="Abdullayev Abdulla Abdulla o’g’li"
                                 autocomplete="off">
+                                <span class="msg" id="msgName"></span>
                             </label>
                             
                             <div class="name-box">
-                                <label for="tel">
+                                <label for="tel" style="position: relative;">
                                     Telefon raqam
                                     <input class="input"
                                     type="tel" 
                                     name="tel" 
-                                    id="tel" 
+                                    id="tel"
                                     placeholder="+998 00 000-00-00"
                                     autocomplete="off">
+                                    <span class="msg"></span>
                                 </label>
                             </div>
                         </div>
@@ -84,26 +90,30 @@
                             <input class="input"
                             type="text" 
                             name="university" 
-                            id="universiteti" 
+                            id="university" 
                             placeholder="O’zbekiston davlat jahon tillari universiteti"
                             autocomplete="off">
+                            <span class="msg" id="universityMsg"></span>
                         </label>
                         
                         <div class="form-wrapper2">
                             <div class="name-box">
-                                <label for="type">
+                                <label for="type" style="position: relative;">
                                     Talabalik turi
-                                    <input class="input"
+                                    <input 
+                                    class="input"
+                                    id = "studyDegree"
                                     type="text" 
                                     name="type" 
                                     id="type" 
                                     placeholder="Bakalavr"
                                     autocomplete="off">
+                                    <span class="msg" id="studyDegreeMsg"></span>
                                 </label>
                             </div> 
                             
                             <div class="name-box">
-                                <label for="amount">
+                                <label for="amount" style="position: relative;">
                                     Kontrakt summa
                                     <input class="input"
                                     type="number" 
@@ -111,6 +121,7 @@
                                     id="amount" 
                                     placeholder="Summani kiriting"
                                     autocomplete="off">
+                                    <span class="msg"></span>
                                 </label>
                             </div>
                         </div>
