@@ -1,25 +1,16 @@
-const homiyBtn = document.getElementById("homiyBtn");
-const sponsorEditModal = document.getElementById("sponsorEditBtn");
-
-
-homiyBtn.addEventListener('click', () => {
-    window.location.href = 'http://127.0.0.1:5500/pages/homiylar/homiylar.html';
-})
-
-
-
-
 
 document.addEventListener("DOMContentLoaded", () => {
     
     const editStudentModal = document.getElementById("editStudentModal");
-    const homiyBtn = document.getElementById("homiyBtn");
     const sponsorEditModal = document.getElementById("sponsorEditBtn");
+
+    const homiyBtn = document.getElementById("homiyBtn");
 
 
 homiyBtn.addEventListener('click', () => {
-    window.location.href = './homiylar/homiylar.html';
+    window.location.href = '../../pages/talabalar/talabalar.html';
 })
+
     
     
     // editBtn.addEventListener("click", () => {

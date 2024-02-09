@@ -35,6 +35,11 @@
     margin-top: 20px;
 }
 
+.recaptcha {
+    max-width: 379px;
+    width: 100%;
+}
+
 
 @media only screen and (max-width:420px) {
     .auth-container {

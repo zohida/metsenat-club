@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./../../components/form/input/input.css">
     <link rel="stylesheet" href="./auth.css">
     <link rel="stylesheet" href="../../css/main.css">
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
     <div class="auth-container">
@@ -17,42 +19,44 @@
             </a>
         </div>
 
-        <div class="auth-info">
-            <h2 class="auth-title">
-                Kirish
-            </h2>
-
-            <div class="name-box">
-                <label for="name">
-                    Login
-                    <input class="input"
-                    type="text" 
-                    name="login" 
-                    id="login" 
-                    placeholder="adm8904"
-                    autocomplete="off">
-                </label>
+        <form action="">
+            <div class="auth-info">
+                <h2 class="auth-title">
+                    Kirish
+                </h2>
+    
+                <div class="name-box">
+                    <label for="name">
+                        Login
+                        <input class="input"
+                        type="text" 
+                        name="login" 
+                        id="login" 
+                        placeholder="adm8904"
+                        autocomplete="off">
+                    </label>
+                </div>
+    
+                <div class="name-box parol" style="margin-bottom: 20px;">
+                    <label for="name">
+                        Parol
+                        <input class="input"
+                        type="password" 
+                        name="password" 
+                        id="password" 
+                        placeholder=""
+                        autocomplete="off">
+                    </label>
+                </div>
+    
+                <div class="g-recaptcha recaptcha" data-sitekey="6Ld8QGspAAAAAI0yydJ51BKX7KXhEDLVFbvlw3N0"></div>
+    
+                <button class="btn btn-main btn-primary enter">
+                    Kirish
+                </button>
+    
             </div>
-
-            <div class="name-box parol">
-                <label for="name">
-                    Parol
-                    <input class="input"
-                    type="password" 
-                    name="password" 
-                    id="password" 
-                    placeholder=""
-                    autocomplete="off">
-                </label>
-            </div>
-
-            <img class="captcha" src="./../../images/captcha.png" alt="Captcha">
-
-            <button class="btn btn-main btn-primary enter">
-                Kirish
-            </button>
-
-        </div>
+        </form>
     </div>
 </body>
 </html>

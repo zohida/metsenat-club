@@ -57,6 +57,10 @@
     background: #36F;
 }
 
+.tab-item:nth-child(3).active {
+    border-radius: 0px 6px 6px 0;
+}
+
 .tab-link.active {
     color: #FFF;
 }

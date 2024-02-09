@@ -15,6 +15,13 @@
     gap: 30px;
 }
 
+.menu-link {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 21px;
+    color: #28293D;
+}
+
 .nav-link {
     font-size: 14px;
     font-weight: 500;
@@ -34,6 +41,18 @@
     color: #28293D;
 }
 
+.menu-enter-btn {
+    display: flex;
+    align-items: center;
+    max-width: 68px;
+    width: 100%;
+    gap: 6px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 21px;
+    color: #28293D;
+}
+
 .sign-up {
     max-width: 175px;
     width: 100%;
@@ -46,6 +65,36 @@
     border-radius: 8px;
 }
 
+.menu-btn{
+    max-width: 250px;
+    width: 100%;
+    padding: 8px 32px;
+    border: 2px solid #3366FF;
+    color: #3366FF;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    border-radius: 8px;
+}
+
+.menu {
+    display: none;
+    cursor: pointer;
+}
+
+.nav-list-responsive {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 40px;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    z-index: 20;
+    transform: translate(-50%, -50%);
+    gap: 20px;
+}
 
 @media only  screen and (max-width:930px) {
 
@@ -88,11 +137,31 @@
 @media only  screen and (max-width:690px) {
 
     .header-logo {
-        max-width: 160px;
+        max-width: 295px;
         width: 100%;
     }
 
-    .nav-list {
-        gap: 10px;
+    .nav {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+}
+
+@media only  screen and (max-width:513px) {
+
+    .header-logo {
+        max-width: 235px;
+        width: 100%;
+    }
+}
+
+@media only  screen and (max-width:357px) {
+
+    .header-logo {
+        max-width: 200px;
+        width: 100%;
     }
 }

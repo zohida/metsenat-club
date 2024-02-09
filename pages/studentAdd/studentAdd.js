@@ -5,7 +5,7 @@ const studentCard = document.getElementById("studentCard");
 
 
 studentExitBtn.addEventListener('click', () => {
-    window.location.href = './../talabalar/talabalar.html';
+    window.location.href = '../../pages/talabalar/talabalar.html';
 });
 
 
@@ -70,7 +70,7 @@ function addInfo() {
         studentCard.innerHTML += `
         <ul class="homiy-card">
         <li class="info id-homiy">${index + 1}</li>
-        <li class="info name-homiy student-name ">${}</li>
+        <li class="info name-homiy student-name "></li>
         <li >
         <p class="info tel-homiy study-type">Bakalavr</p>
         </li>
