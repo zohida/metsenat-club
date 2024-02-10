@@ -40,6 +40,12 @@ main {
     line-height: 28px;
 }
 
+.sponsor-card-wrapcard {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
 .footer-inner {
    position: fixed;
    bottom: 5px;
@@ -49,4 +55,13 @@ main {
 .footer {
     padding: 241px;
     z-index: 3;
+}
+
+@media screen and (max-width:650px) {
+    .sponsor-card-wrapcard {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 20px;
+    }
 }
