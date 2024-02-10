@@ -44,9 +44,39 @@
                         </li>
                     </ul>
                 </nav>
+
+                <button id="menuBtn">
+                    <img 
+                src="./../../images/menu.svg" 
+                alt="Menu" 
+                class="menu"
+                width="30"
+                height="30">
+                </button>
             </div>
         </div>
     </header>
+
+    <ul class="nav-list nav-list-responsive hidden" id="menuList">
+        <li class="nav-item">
+            <a class=" menu-link" href="#">Asosiy</a>
+        </li>
+        <li class="nav-item">
+            <a class=" menu-link" href="#">Grantlar</a>
+        </li>
+        <li class="nav-item">
+            <a class=" menu-link" href="#">Soliq imtiyozlari</a>
+        </li>
+        <li class="nav-item">
+            <button class=" menu-enter-btn">
+                <img src="./../../images/iconenter.svg" alt="Enter Icon">
+                Kirish
+            </button>
+        </li>
+        <li class="nav-item">
+           <button class="menu-btn">Ro'yhatdan o'tish</button>
+        </li>
+    </ul>
     
     <main class="site-main">
         <section class="sponsor-info">
@@ -163,7 +193,8 @@
             </div>
         </section>
     </main>
-    
+    <div class="hidden overlay" id="overlay"></div>
     <script src="./../../components/tab-enter/tab.js"></script>
+    <script src="./../../components/header-sponsor/header.js"></script>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Auth Page</title>
+    <title>Auth page</title>
     <link rel="stylesheet" href="../../components/button/button.css">
     <link rel="stylesheet" href="./../../components/form/input/input.css">
     <link rel="stylesheet" href="./auth.css">
@@ -12,6 +12,7 @@
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
+
     <div class="auth-container">
         <div class="auth-header">
             <a href="./../../index.html">
@@ -19,14 +20,14 @@
             </a>
         </div>
 
-        <form action="">
+        <form id="authForm">
             <div class="auth-info">
                 <h2 class="auth-title">
                     Kirish
                 </h2>
     
                 <div class="name-box">
-                    <label for="name">
+                    <label for="login">
                         Login
                         <input class="input"
                         type="text" 
@@ -34,6 +35,7 @@
                         id="login" 
                         placeholder="adm8904"
                         autocomplete="off">
+                        <span id="msg" class="error"></span>
                     </label>
                 </div>
     
@@ -46,10 +48,11 @@
                         id="password" 
                         placeholder=""
                         autocomplete="off">
+                        <span id="msg1" class="error"></span>
                     </label>
                 </div>
     
-                <div class="g-recaptcha recaptcha" data-sitekey="6Ld8QGspAAAAAI0yydJ51BKX7KXhEDLVFbvlw3N0"></div>
+                <div class="g-recaptcha recaptcha" data-sitekey="6LddUG0pAAAAACRSoVjslLwhNXXfcbsBsblzhKX2"></div>
     
                 <button class="btn btn-main btn-primary enter">
                     Kirish
@@ -58,5 +61,7 @@
             </div>
         </form>
     </div>
+
+    <script src="./auth.js"></script>
 </body>
 </html>

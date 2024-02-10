@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 homiyBtn.addEventListener('click', () => {
-    window.location.href = '../../pages/talabalar/talabalar.html';
+    window.location.href = '../../pages/homiylar/homiylar.html';
 })
 
     

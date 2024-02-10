@@ -96,6 +96,9 @@
     border: 1px solid rgba(46, 91, 255, 0.08);
     background: #FFF;
     margin-bottom: 12px;
+    max-width: 1200px;
+    width: 100%;
+    overflow-x: auto;
 }
 
 .info {

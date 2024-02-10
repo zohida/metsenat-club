@@ -6,12 +6,16 @@ var lineChart = new Chart(ctx, {
         labels: ["Yanvar", "Fevral", "Mart", "Aprel", "May", "Iyun", "Iyul", "Avgust", "Sentyabr", "Oktyabr", "Noyabr", "Dekabr"], 
         datasets: [{
             label: 'Homiylar',
-            data: [100, 500, 1000, 5000, 10000, 50000], 
+            tension: 0.4,
+            data: [100, 1000, 4000, 5000, 7000, 4000, 6000, 8000, 7000, 9000, 6000, 8000],
+            pointRadius: 0, 
             borderColor: '#4C6FFF',
             fill: false,
         }, {
             label: 'Talabalar',
-            data: [150, 600, 1100, 5200, 10200, 52000], 
+            tension: 0.4,
+            pointRadius: 0,
+            data: [200, 1000, 3000, 4000, 2000, 5000, 4000, 6000, 3000, 5000, 6000, 8000 ], 
             borderColor: '#FF92AE',
             fill: false
         }]
@@ -21,7 +25,7 @@ var lineChart = new Chart(ctx, {
             yAxes: [{
                 ticks: {
                     beginAtZero: true,
-                    stepSize: 10000 
+                    stepSize: 10000,
                 }
             }]
         }

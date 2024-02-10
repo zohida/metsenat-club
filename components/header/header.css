@@ -47,3 +47,24 @@
     width: 32px;
     height: 32px;
 }
+
+
+@media screen and (max-width:540px) {
+    .header-profile-wrap {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .header-user {
+        display: none;
+    }
+
+    .user-btn {
+        padding: 4px;
+    }
+
+    .header-profile-wrap {
+        gap: 10px;
+    }
+}
