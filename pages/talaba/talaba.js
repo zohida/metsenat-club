@@ -69,3 +69,13 @@ document.addEventListener('keydown', (e) => {
         closeModal()
     }
 })
+
+
+
+const formStudent = document.getElementById("modalEditStudent");
+
+formStudent.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    formStudent.reset();
+})

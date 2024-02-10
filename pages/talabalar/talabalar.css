@@ -7,7 +7,7 @@
     width: 100%;
     position: absolute;
     top: 24px;
-    right: 0;
+    right: 20px;
 }
 
 .student-info {
@@ -27,24 +27,27 @@
 }
 
 .type-student {
-    margin-left: 120px;
+    margin-left: 160px;
+    width: 115px;
 }
 
 .student-name {
-    margin-left: -30px;
-    max-width: 220px;
-    width: 100%;
+    width: 230px;
 }
 
 .study-type {
-   margin-left: 0px;
+    margin-left: -20px;
 }
 
 .university-name {
-    margin-left: 70px;
-    margin-right: 160px;
+   width: 200px;
 }
 
 .university {
-    margin-left: 10px;
+   width: 200px;
+}
+
+.student-homiy {
+    width: 132px;
+    margin-right: 50px;
 }
