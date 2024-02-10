@@ -52,6 +52,7 @@ main {
 }
 
 .main-info-box::after {
+    display: inline-block;
     position: absolute;
     max-width: 726px;
     width: 100%;
@@ -122,4 +123,16 @@ main {
 
 .usage-sponsor {
     margin-right: 66px;
+}
+
+@media screen and(max-width:862px) {
+
+    .main-info-box::after {
+        max-width: 0;
+    }
+    
+    .main-study-box::after {
+        display: none;
+    }
+    
 }

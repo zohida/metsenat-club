@@ -158,3 +158,133 @@
     margin-left: 155px;
     margin-top: 60px;
  }
+
+ .modal-date {
+    max-width: 544px;
+    width: 100%;
+ }
+
+
+ @media screen and (max-width:610px){
+    .student-filter{
+        max-width: 500px;
+        width: 100%;
+    }
+
+
+    .filter-title {
+
+        font-size: 20px;
+    }
+    
+    
+    .filter-footer {
+        margin-top: 60px;
+        display: flex;
+        gap: 16px;
+        flex-direction: column;
+    }
+    
+    .filter-footer button:nth-child(1) {
+        max-width: 436px;
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .filter-footer button:nth-child(2) {
+        max-width: 436px;
+        width: 100%;
+    }
+
+    .student-edit{
+        max-width: 500px;
+        width: 100%;
+    }
+    
+    .filter-edit-footer {
+        max-width: 522px;
+        width: 100%;
+        margin-left:0;
+    }
+
+    .sponsor-edit-footer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 16px;
+        margin-left: 0px;
+        margin-top: 60px;
+     }
+
+     .deleteBtn {
+        max-width: 522px;
+        width: 100%;
+     }
+
+     .saveBtn {
+        max-width: 522px;
+        width: 100%;
+     }
+    
+ }
+
+
+ @media screen and (max-width:570px){
+    .student-filter{
+        max-width: 450px;
+        width: 100%;
+        padding: 20px 24px;
+    }
+
+    .student-edit{
+        max-width: 450px;
+        width: 100%;
+        padding: 20px 24px;
+    }
+    
+ }
+
+ @media screen and (max-width:470px){
+    .student-filter{
+        max-width: 400px;
+        width: 100%;
+        padding: 20px 24px;
+    }
+
+
+    .student-edit{
+        max-width: 400px;
+        width: 100%;
+        padding: 20px 24px;
+    }
+
+    .filter-title {
+
+        font-size: 18px;
+    }
+    
+    
+ }
+
+
+ @media screen and (max-width:420px){
+    .student-filter{
+        max-width: 350px;
+        width: 100%;
+        padding: 20px 24px;
+    }
+
+    .student-edit{
+        max-width: 350px;
+        width: 100%;
+        padding: 20px 24px;
+    }
+
+
+    .filter-title {
+
+        font-size: 18px;
+    }
+    
+    
+ }

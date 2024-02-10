@@ -65,10 +65,152 @@
     background: #36F;
 }
 
+.tab-item:nth-child(2).active {
+    border-radius: 0 0;
+}
+
 .tab-item:nth-child(3).active {
     border-radius: 0px 6px 6px 0;
 }
 
 .tab-link.active {
     color: #FFF;
+}
+
+@media screen and (max-width:774px) {
+    .tab-list {
+        width: 510px;
+    }
+    
+    .tab-item {
+        max-width: 170px;
+        width: 100%;
+    }
+    
+    
+    .tab-item:nth-child(2)::before {
+        top: 0px;
+    }
+    
+    .tab-item:nth-child(2)::after {
+        top: 0px;
+    }
+
+}
+
+@media screen and (max-width:774px) {
+    .tab-list {
+        width: 480px;
+    }
+    
+    .tab-item {
+        max-width: 160px;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:657px) {
+    .tab-list {
+        width: 450px;
+    }
+    
+    .tab-item {
+        max-width: 150px;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:627px) {
+    .tab-list {
+        width: 390px;
+    }
+
+    .tab-item {
+        max-width: 130px;
+        width: 100%;
+    }
+    
+    .tab-link {
+        color: rgba(51, 102, 255, 0.60);
+        font-size: 12px;;
+        font-weight: 500;
+        line-height: 12px;
+        letter-spacing: 1.125px;
+        text-transform: uppercase;
+        margin: 0;
+        transition: all 0.3s;
+    }
+
+}
+
+
+@media screen and (max-width:578px) {
+    .tab-list {
+        width: 330px;
+    }
+
+    .tab-item {
+        max-width: 110px;
+        width: 100%;
+    }
+    
+    .tab-link {
+        font-size: 10px;;
+    }
+
+    .tab-item:nth-child(2)::before {
+        height: 38px;
+    }
+    
+    .tab-item:nth-child(2)::after {
+        height: 38px;
+    }
+
+}
+
+@media screen and (max-width:493px) {
+    .tab-list {
+        width: 300px;
+    }
+
+    .tab-item {
+        max-width: 100px;
+        width: 100%;
+    }
+    
+    .tab-link {
+        font-size: 10px;;
+    }
+
+}
+
+
+@media screen and (max-width:463px) {
+    .tab-list {
+        width: 240px;
+    }
+
+    .tab-item {
+        max-width: 80px;
+        width: 100%;
+    }
+    
+    .tab-link {
+        font-size: 8px;;
+    }
+
+}
+
+@media screen and (max-width:412px) {
+    .tab-list {
+        width: 210px;
+    }
+
+    .tab-item {
+        max-width: 70px;
+        width: 100%;
+    }
+
 }
