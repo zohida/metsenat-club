@@ -8,50 +8,18 @@
     <link rel="stylesheet" href="./../../css/main.css">
 </head>
 <body>
-    <div class="container">
-        <div class="pagination-wrapper">
-            <p class="pagination-text">
-                Ko'rsatish
-            </p>
-
-            <div class="show-dropdown">
-                <div class="select">
-                    <span class="select-num" id="selectNum">10</span>
-                    <button id="paginationIcon">
-                        V
-                    </button>
-                </div>
-                <ul class="select-list hidden" id="selectList">
-                    <li class="select-item">10</li>
-                    <li class="select-item">20</li>
-                    <li class="select-item">30</li>
-                </ul>
-            </div>
-
-            <ul class="pagination-list">
-                <li class="paginatiion-item">
-                    <span><</span>
-                </li>
-                <li class="paginatiion-item">
-                    <span>1</span>
-                </li>
-                <li class="paginatiion-item">
-                    <span>2</span>
-                </li>
-                <li class="paginatiion-item">
-                    <span>...</span>
-                </li>
-                <li class="paginatiion-item"><span>9</span></li>
-                <li class="paginatiion-item">
-                    <span>10</span>
-                </li>
-                <li class="paginatiion-item">
-                    <span>></span>
-                </li>
-            </ul>
-        </div>
-    </div>
-
+   
+    <ul class="pagination" id="pagination">
+        <li class="pagination-list">
+            <a href="#" id="prev">
+                <img src="./../../images/pag-icon-left.svg" alt="">
+            </a>
+        </li>
+        <li><a href="#" class="page-link">1</a></li>
+        <li><a href="#" id="next">
+            <img src="./../../images/pag-icon-right.svg" alt="">
+        </a></li>
+    </ul>
     <script src="./pagination.js"></script>
 </body>
 </html>

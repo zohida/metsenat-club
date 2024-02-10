@@ -1,53 +1,78 @@
-const paginationIcon = document.getElementById("paginationIcon");
-const selectList = document.getElementById("selectList");
-const selectNum = document.getElementById("selectNum");
-const selectItem = document.querySelectorAll('.select-item');
+const cardsPerPage = 10; // Number of cards per page
+const totalCards = 100; // Total number of cards
+const totalPages = Math.ceil(totalCards / cardsPerPage);
+
+const pagination = document.getElementById('pagination');
+
+function generatePagination(currentPage) {
+    let paginationHTML = '';
+
+    paginationHTML += `<li><a href="#" id="prev"><img src="./../../images/pag-icon-left.svg" alt=""></a></li>`;
+
+    for (let i = 1; i <= totalPages; i++) {
+        if (i === 1 || i === totalPages || (i >= currentPage - 1 && i <= currentPage + 1)) {
+            paginationHTML += `<li><a href="#" class="page-link${i === currentPage ? ' active' : ''}" data-page="${i}">${i}</a></li>`;
+        } else if (i === currentPage - 2 || i === currentPage + 2) {
+            paginationHTML += `<li><span>...</span></li>`;
+        }
+    }
+
+    paginationHTML += `<li><a href="#" id="next"><img src="./../../images/pag-icon-right.svg" alt=""></a></li>`;
+
+    pagination.innerHTML = paginationHTML;
+
+    // Add event listener for "Prev" button
+    document.getElementById('prev').addEventListener('click', function(event) {
+        event.preventDefault();
+        handlePaginationClick('prev', currentPage);
+    });
+
+    // Add event listeners for numbered pages
+    const pageLinks = document.querySelectorAll('.page-link');
+    pageLinks.forEach(pageLink => {
+        pageLink.addEventListener('click', function(event) {
+            event.preventDefault();
+            const pageNumber = parseInt(event.target.getAttribute('data-page'));
+            handlePaginationClick(pageNumber, currentPage);
+        });
+    });
+
+    // Add event listener for "Next" button
+    document.getElementById('next').addEventListener('click', function(event) {
+        event.preventDefault();
+        handlePaginationClick('next', currentPage);
+    });
+}
+
+function handlePaginationClick(targetPage, currentPage) {
+    let newPage;
+    if (targetPage === 'prev') {
+        newPage = currentPage > 1 ? currentPage - 1 : 1;
+    } else if (targetPage === 'next') {
+        newPage = currentPage < totalPages ? currentPage + 1 : totalPages;
+    } else {
+        newPage = targetPage;
+    }
+
+    generatePagination(newPage);
+    showPage(newPage);
+}
+
+function showPage(page) {
+    const cards = document.querySelectorAll('.homiy-card');
+    const startIndex = (page - 1) * cardsPerPage;
+    const endIndex = startIndex + cardsPerPage;
+
+    cards.forEach((card, index) => {
+        if (index >= startIndex && index < endIndex) {
+            card.style.display = ''; // Reset display property to default
+        } else {
+            card.style.display = 'none';
+        }
+    });
+}
 
 
-paginationIcon.addEventListener("click", () => {
-    selectList.classList.toggle("hidden");
-})
-
-selectItem.forEach((item) => {
-   item.addEventListener("click", () => {
-    let text = item.innerText;
-    selectNum.innerText = text;
-  
-    selectList.classList.toggle("hidden");
-   })
-})
-
- // Get pagination list element
- const paginationList = document.getElementById('paginationList');
- // Get pagination item elements
- const paginationItems = document.querySelectorAll('.pagination-item');
-
- // Function to show items based on page number
- function showItems(pageNumber, itemsPerPage) {
-     // Calculate start and end index of items to be shown
-     const startIndex = (pageNumber - 1) * itemsPerPage;
-     const endIndex = pageNumber * itemsPerPage;
-
-     // Hide all items initially
-     paginationItems.forEach(item => {
-         item.style.display = 'none';
-     });
-
-     // Show items within the range
-     for (let i = startIndex; i < endIndex; i++) {
-         if (paginationItems[i]) {
-             paginationItems[i].style.display = 'block';
-         }
-     }
- }
-
- // Show the initial items
- showItems(1, 10);
-
- // Add click event listener to pagination items
- paginationItems.forEach((item, index) => {
-     item.addEventListener('click', () => {
-         // Update pagination to show the clicked page
-         showItems(index + 1, 10);
-     });
- });
+// Initial page load
+generatePagination(1);
+showPage(1);
