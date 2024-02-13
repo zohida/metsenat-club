@@ -51,43 +51,16 @@
     font-weight: bold;
 }
 
-@media screen and (max-width:998px) {
-    .board-actions {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        max-width: 400px;
-        width: 100%;
-    }
-
+@media screen and (max-width:1240px) {
     .board-inner {
-        gap: 100px;
+        flex-direction: column;
+        gap: 20px;
     }
 
-}
-
-@media screen and (max-width:821px) {
-
-
-    .board-inner {
-        gap: 60px;
-    }
-
-}
-
-@media screen and (max-width:821px) {
-
-    .board-inner {
-        gap: 40px;
-    }
 
 }
 
 @media screen and (max-width:578px) {
-
-    .board-inner {
-        gap: 30px;
-    }
 
     .graph-title {
         font-size: 20px;
@@ -96,14 +69,6 @@
 }
 
 @media screen and (max-width:412px) {
-
-    .board-inner {
-        gap: 20px;
-    }
-
-    .board-actions {
-        gap: 6px;
-    }
 
     .graph-title {
         font-size: 18px;

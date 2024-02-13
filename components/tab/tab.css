@@ -146,7 +146,7 @@
 }
 
 
-@media screen and (max-width:578px) {
+ @media screen and (max-width:461px) {
     .tab-list {
         width: 330px;
     }
@@ -168,49 +168,4 @@
         height: 38px;
     }
 
-}
-
-@media screen and (max-width:493px) {
-    .tab-list {
-        width: 300px;
-    }
-
-    .tab-item {
-        max-width: 100px;
-        width: 100%;
-    }
-    
-    .tab-link {
-        font-size: 10px;;
-    }
-
-}
-
-
-@media screen and (max-width:463px) {
-    .tab-list {
-        width: 240px;
-    }
-
-    .tab-item {
-        max-width: 80px;
-        width: 100%;
-    }
-    
-    .tab-link {
-        font-size: 8px;;
-    }
-
-}
-
-@media screen and (max-width:412px) {
-    .tab-list {
-        width: 210px;
-    }
-
-    .tab-item {
-        max-width: 70px;
-        width: 100%;
-    }
-
-}
+} 

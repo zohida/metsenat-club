@@ -71,18 +71,3 @@ button:disabled .btn-svg path {
     background: #EDF1FD;
     color: #3365FC;
 }
-
-@media screen and (max-width:998px) {
-    .text {
-        display: none;
-    }
-
-    #filterBtn {
-        padding: 12px;
-    }
-
-    #filterBtnStudent{
-        padding: 12px;
-    }
-
-}
