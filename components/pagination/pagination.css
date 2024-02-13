@@ -20,3 +20,9 @@
     color: #1D1D1F;
 }
 
+
+::placeholder {
+    font-size: 15px;
+    line-height: 17.78px;
+    color: #2E384D;
+}

@@ -1,8 +1,10 @@
 
 document.addEventListener("DOMContentLoaded", () => {
     
-    const editStudentModal = document.getElementById("editStudentModal");
-    const sponsorEditModal = document.getElementById("sponsorEditBtn");
+    const sponsorEditBtn = document.getElementById("sponsorEditBtn");
+    const sponsorEditModal = document.getElementById("sponsorEditModal");
+    const closeBtn = document.getElementById("closeBtn");
+
 
     const homiyBtn = document.getElementById("homiyBtn");
 
@@ -13,17 +15,17 @@ homiyBtn.addEventListener('click', () => {
 
     
     
-    // editBtn.addEventListener("click", () => {
-    //     if (editStudentModal && overlay) {
-    //         editStudentModal.classList.toggle("hidden");
-    //         overlay.classList.remove("hidden");
-    //     }
-    // });
+    sponsorEditBtn.addEventListener("click", () => {
+        if (sponsorEditModal && overlay) {
+            sponsorEditModal.classList.toggle("hidden");
+            overlay.classList.remove("hidden");
+        }
+    });
     
-    // closeModalBtn.addEventListener("click", () => {
-    //     editStudentModal.classList.toggle("hidden");
-    //     overlay.classList.add("hidden");
-    // })
+    closeBtn.addEventListener("click", () => {
+        sponsorEditModal.classList.toggle("hidden");
+        overlay.classList.add("hidden");
+    })
     
 });
 

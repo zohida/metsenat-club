@@ -3,7 +3,6 @@
     align-items: center;
     max-width: 586px;
     width: 100%;
-    height: 40px;
     background-color: #fff;
     border: 2px solid #E0E7FF;
     border-radius: 6px;
@@ -12,12 +11,12 @@
 .tab-item {
     max-width: 293px;
     width: 100%;
-    padding: 10px 85px;
+    padding: 12px 80px;
     position: relative;
 }
 
 .tab-link {
-    font-size: 12px;
+    font-size: 10px;
     line-height: 12px;
     letter-spacing: 1.13px;
     font-weight: 500;
@@ -27,11 +26,11 @@
 .tab-item:nth-child(2)::before {
     position: absolute;
     width: 2px;
-    height: 40px;
+    height: 44px;
     flex-shrink: 0;
     background: #DDE3FB;
     content: "";
-    top: 0;
+    top: 2px;
     left: 0;
 }
 

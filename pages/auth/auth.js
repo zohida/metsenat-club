@@ -13,5 +13,5 @@ document.getElementById('authForm').addEventListener('submit', function(event) {
     localStorage.setItem('login', login);
     localStorage.setItem('password', password);
 
-    window.location.href = './../../index.html';
+    window.location.href = './../../about.html';
 });

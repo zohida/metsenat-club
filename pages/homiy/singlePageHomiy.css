@@ -14,6 +14,7 @@ main {
     align-items: center;
     justify-content: flex-start;
     gap: 16px;
+    position: relative;
 }
 
 .btn-exit {
@@ -63,6 +64,31 @@ main {
         align-items: flex-start;
         flex-direction: column;
         gap: 20px;
+    }
+
+    .one-info {
+        padding-bottom: 40px;
+    }
+
+    .btn-check {
+        position: absolute;
+        left: 40px;
+        top: 40px;
+    }
+
+}
+
+
+@media screen and (max-width:510px) {
+
+    .one-info {
+        padding-bottom: 40px;
+    }
+
+    .btn-check {
+        position: absolute;
+        left: 40px;
+        top: 60px;
     }
 
 }

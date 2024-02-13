@@ -4,6 +4,10 @@
     margin: 80px auto;
 }
 
+.name-box {
+    position: relative;
+}
+
 .auth-info {
     padding: 32px;
     background-color: #fff;
@@ -24,7 +28,7 @@
 }
 
 .parol {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .auth-header {
@@ -38,11 +42,16 @@
 .recaptcha {
     max-width: 379px;
     width: 100%;
+    margin-top: 30px;
 }
 
 
-.error {
+.error1 {
     color: red;
+    position: absolute;
+    left: 0;
+    top: 70px;
+    font-size: 10px;
 }
 
 @media only screen and (max-width:420px) {
