@@ -1,5 +1,6 @@
 .modal {
     cursor: pointer;
+    overflow-y: auto;
 }
 
 .student-filter{
@@ -288,4 +289,5 @@
     
     
  }
+
 

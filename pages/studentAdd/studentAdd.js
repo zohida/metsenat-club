@@ -16,6 +16,13 @@ const form = document.getElementById('formStudent');
     const studyDegreeInput = document.getElementById('studyDegree');
     const amountInput = document.getElementById('amount');
 
+    const element = document.getElementById('tel');
+        
+        const maskOptions = {
+          mask: '+{998}(00)000-00-00'
+        };
+        const mask = IMask(element, maskOptions);
+
     form.addEventListener('submit', function(event) {
         event.preventDefault();
 
@@ -26,16 +33,38 @@ const form = document.getElementById('formStudent');
         let isValid = true;
 
         if (nameInput.value.trim() === '') {
-            displayErrorMessage('msgName');
+            displayErrorMessage('msgName', "F.I.SHni to'liq kiriting!!!");
             isValid = false;
+            return
         }
 
-        // Validate other inputs similarly
-        // Add your validation logic here
+        if (telInput.value.trim() === '') {
+            displayErrorMessage('msgTel', "Telefoningizni to'liq kiriting!!!");
+            isValid = false;
+            return
+        }
 
-        // If all inputs are valid, submit the form
+        if (universityInput.value.trim() === '') {
+            displayErrorMessage('universityMsg', "Universitetingizni to'liq kiriting!!!");
+            isValid = false;
+            return
+        }
+
+        if (studyDegreeInput.value.trim() === '') {
+            displayErrorMessage('studyDegreeMsg', "Talabalik turini kiriting!!!");
+            isValid = false;
+            return
+        }
+
+        if (amountInput.value.trim() === '') {
+            displayErrorMessage('amountMsg', "Miqdorni kiriting!!!");
+            isValid = false;
+            return
+        }
+
+        
+
         if (isValid) {
-            // Submit the form
             form.submit();
         }
     });

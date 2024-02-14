@@ -1,211 +1,255 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Enter page</title>
-    <link rel="stylesheet" href="../../components/header-sponsor/header.css">
-    <link rel="stylesheet" href="./../../components/button/button.css">
-    <link rel="stylesheet" href="./../../components/form/input/input.css">
-    <link rel="stylesheet" href="../../components/form/radio/radio.css">
-    <link rel="stylesheet" href="./../../components/tab-enter/tab.css">
-    <link rel="stylesheet" href="./../enter/enter.css">
-    <link rel="stylesheet" href="./../../css/main.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../../components/header-sponsor/header.css" />
+    <link rel="stylesheet" href="./../../components/button/button.css" />
+    <link rel="stylesheet" href="./../../components/form/input/input.css" />
+    <link rel="stylesheet" href="../../components/form/radio/radio.css" />
+    <link rel="stylesheet" href="./../../components/tab-enter/tab.css" />
+    <link rel="stylesheet" href="./../enter/enter.css" />
+    <link rel="stylesheet" href="./../../css/main.css" />
+  </head>
+  <body>
     <header class="header">
-        <div class="container">
-            <div class="header-inner">
-                <a href="./../../index.html">
-                    <img class="header-logo" src="./../../images/logo1.svg" alt="Site logo"
-                    width="295"
-                    height="31">
-                </a>
-                
-                <nav class="nav">
-                    <ul class="nav-list">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Asosiy</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Grantlar</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Soliq imtiyozlari</a>
-                        </li>
-                        <li class="nav-item">
-                            <button class="enter-btn">
-                                <img src="./../../images/iconenter.svg" alt="Enter Icon">
-                                Kirish
-                            </button>
-                        </li>
-                        <li class="nav-item">
-                            <button class="sign-up">Ro'yhatdan o'tish</button>
-                        </li>
-                    </ul>
-                </nav>
+      <div class="container">
+        <div class="header-inner">
+          <a href="./../../index.html">
+            <img
+              class="header-logo"
+              src="./../../images/logo1.svg"
+              alt="Site logo"
+              width="295"
+              height="31"
+            />
+          </a>
 
-                <button id="menuBtn">
-                    <img 
-                src="./../../images/menu.svg" 
-                alt="Menu" 
-                class="menu"
-                width="30"
-                height="30">
+          <nav class="nav">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Asosiy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Grantlar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Soliq imtiyozlari</a>
+              </li>
+              <li class="nav-item">
+                <button class="enter-btn">
+                  <img src="./../../images/iconenter.svg" alt="Enter Icon" />
+                  Kirish
                 </button>
-            </div>
+              </li>
+              <li class="nav-item">
+                <button class="sign-up">Ro'yhatdan o'tish</button>
+              </li>
+            </ul>
+          </nav>
+
+          <button id="menuBtn">
+            <img
+              src="./../../images/menu.svg"
+              alt="Menu"
+              class="menu"
+              width="30"
+              height="30"
+            />
+          </button>
         </div>
+      </div>
     </header>
 
     <ul class="nav-list nav-list-responsive hidden" id="menuList">
-        <li class="nav-item">
-            <a class=" menu-link" href="#">Asosiy</a>
-        </li>
-        <li class="nav-item">
-            <a class=" menu-link" href="#">Grantlar</a>
-        </li>
-        <li class="nav-item">
-            <a class=" menu-link" href="#">Soliq imtiyozlari</a>
-        </li>
-        <li class="nav-item">
-            <button class=" menu-enter-btn">
-                <img src="./../../images/iconenter.svg" alt="Enter Icon">
-                Kirish
-            </button>
-        </li>
-        <li class="nav-item">
-           <button class="menu-btn">Ro'yhatdan o'tish</button>
-        </li>
+      <li class="nav-item">
+        <a class="menu-link" href="#">Asosiy</a>
+      </li>
+      <li class="nav-item">
+        <a class="menu-link" href="#">Grantlar</a>
+      </li>
+      <li class="nav-item">
+        <a class="menu-link" href="#">Soliq imtiyozlari</a>
+      </li>
+      <li class="nav-item">
+        <button class="menu-enter-btn">
+          <img src="./../../images/iconenter.svg" alt="Enter Icon" />
+          Kirish
+        </button>
+      </li>
+      <li class="nav-item">
+        <button class="menu-btn">Ro'yhatdan o'tish</button>
+      </li>
     </ul>
-    
+
     <main class="site-main">
-        <section class="sponsor-info">
-            <div class="container">
-                <div class="sponsor-info-inner">
-                    <div class="page">
-                        <h2 class="page-title">
-                            Homiy sifatida ariza topshirish
-                        </h2>
-                        <div class="tab" style="margin-bottom: 24px;">
-                            <ul class="tab-list">
-                                <li class="tab-item">
-                                    <a class="tab-link" href="./../jsh/jsh.html">
-                                        JISMONIY SHAXS
-                                    </a>
-                                </li>
-                                <li class="tab-item">
-                                    <a class="tab-link" href="./ysh.index.html">
-                                        YURIDIK SHAXS
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        
-                        <form id="formRequest">
+      <section class="sponsor-info">
+        <div class="container">
+          <div class="sponsor-info-inner">
+            <div class="page">
+              <h2 class="page-title">Homiy sifatida ariza topshirish</h2>
+              <div class="tab" style="margin-bottom: 24px">
+                <ul class="tab-list">
+                  <li class="tab-item">
+                    <a class="tab-link" href="./../jsh/jsh.html">
+                      JISMONIY SHAXS
+                    </a>
+                  </li>
+                  <li class="tab-item">
+                    <a class="tab-link" href="./ysh.index.html">
+                      YURIDIK SHAXS
+                    </a>
+                  </li>
+                </ul>
+              </div>
 
-                            <div class="name-box">
-                                <label for="name">
-                                    F.I.Sh. (Familiya Ism Sharif)
-                                    <input class="input"
-                                    type="text" 
-                                    name="name" 
-                                    id="name" 
-                                    placeholder="Abdullayev Abdulla Abdulla o’g’li"
-                                    autocomplete="off">
-                                </label>
-                            </div>
-                            
-                            <div class="name-box">
-                                <label for="tel">
-                                    Telefon raqam
-                                    <input class="input"
-                                    type="tel" 
-                                    name="tel" 
-                                    id="tel" 
-                                    placeholder="+998 00 000-00-00"
-                                    autocomplete="off">
-                                </label>
-                            </div> 
-                            
-                            <div>
-                                <h3 class="price-heading">To'lov summasi</h3>
-                            <div class="price-button">
-                                
-                                <label class="price-label active" for="price1" >
-                                    <input class="radio" type="radio" value="price1" name="button" id="price1">
-                                    <p  class="radio-amount">1 000 000 <span>UZS</span></p>
-                                </label>
-                                
-                                <label class="price-label " for="price2" >
-                                    <input class="radio" type="radio" value="price2" name="button" id="price2">
-                                    <p  class="radio-amount">5 000 000 <span>UZS</span></p>
-                                </label>
-                                
-                                <label class="price-label" for="price3" >
-                                    <input class="radio" type="radio" value="price3" name="button" id="price3">
-                                    <p  class="radio-amount">7 000 000 <span>UZS</span></p>
-                                </label>
-                                
-                                <label class="price-label" for="price4" >
-                                    <input class="radio" type="radio" value="price4" name="button" id="price4">
-                                    <p  class="radio-amount">10 000 000 <span>UZS</span></p>
-                                </label>
-                                
-                                <label class="price-label" for="price5" >
-                                    <input class="radio" type="radio" value="price5" name="button" id="price5">
-                                    <p  class="radio-amount">30 000 000 <span>UZS</span></p>
-                                </label>
-                                
-                                <label class="price-label" for="price6" >
-                                    <input class="radio" type="radio" value="price6" name="button" id="price6">
-                                    <p  class="radio-amount">BOSHQA</p>
-                                </label>
-                                
-                            </div>
-                            </div>
-                            
-                            <div class="name-box">
-                                <label for="name">
-                                    Tashkilot nomi
-                                    <input class="input"
-                                    type="text" 
-                                    name="company" 
-                                    id="company" 
-                                    placeholder="Orient group"
-                                    autocomplete="off">
-                                </label>
-                            </div>
-                            
-                            <button class="btn btn-main btn-primary">
-                                Yuborish
-                            </button>
-
-                        </form>
-                    </div>
-
-                    <div class="article">
-                        <div class="article-quote">
-                            <blockquote class="president-word">
-                                Yuqori sinfda bolalar shaxs bo'lib,
-                                jamoa bo'lib shakllanadi. Ayni o'sha paytda ularni
-                                o'zlari o'rgangan muhitdan ajratib qo'ymaslik kerak.
-                            </blockquote>
-                        </div>
-                        <div class="president-word-wrapper">
-                            <img class="user-img" src="./../../images/user.svg" alt="President pic">
-                            <div class="user-info-box">
-                                <span class="president-name">Shavkat Mirziyoyev</span>
-                                <span class="president-degree">O‘zbekiston Respublikasi Prezidenti</span>
-                            </div>
-                        </div>
-                        
-                    </div>
+              <form id="formRequest">
+                <div class="name-box">
+                  <label for="name">
+                    F.I.Sh. (Familiya Ism Sharif)
+                    <input
+                      class="input"
+                      type="text"
+                      name="name"
+                      id="name"
+                      placeholder="Abdullayev Abdulla Abdulla o’g’li"
+                      autocomplete="off"
+                    />
+                  </label>
                 </div>
+
+                <div class="name-box">
+                  <label for="tel">
+                    Telefon raqam
+                    <input
+                      class="input"
+                      type="tel"
+                      name="tel"
+                      id="tel"
+                      placeholder="+998 00 000-00-00"
+                      autocomplete="off"
+                    />
+                  </label>
+                </div>
+
+                <div>
+                  <h3 class="price-heading">To'lov summasi</h3>
+                  <div class="price-button">
+                    <label class="price-label active" for="price1">
+                      <input
+                        class="radio"
+                        type="radio"
+                        value="price1"
+                        name="button"
+                        id="price1"
+                      />
+                      <p class="radio-amount">1 000 000 <span>UZS</span></p>
+                    </label>
+
+                    <label class="price-label" for="price2">
+                      <input
+                        class="radio"
+                        type="radio"
+                        value="price2"
+                        name="button"
+                        id="price2"
+                      />
+                      <p class="radio-amount">5 000 000 <span>UZS</span></p>
+                    </label>
+
+                    <label class="price-label" for="price3">
+                      <input
+                        class="radio"
+                        type="radio"
+                        value="price3"
+                        name="button"
+                        id="price3"
+                      />
+                      <p class="radio-amount">7 000 000 <span>UZS</span></p>
+                    </label>
+
+                    <label class="price-label" for="price4">
+                      <input
+                        class="radio"
+                        type="radio"
+                        value="price4"
+                        name="button"
+                        id="price4"
+                      />
+                      <p class="radio-amount">10 000 000 <span>UZS</span></p>
+                    </label>
+
+                    <label class="price-label" for="price5">
+                      <input
+                        class="radio"
+                        type="radio"
+                        value="price5"
+                        name="button"
+                        id="price5"
+                      />
+                      <p class="radio-amount">30 000 000 <span>UZS</span></p>
+                    </label>
+
+                    <label class="price-label" for="price6">
+                      <input
+                        class="radio"
+                        type="radio"
+                        value="price6"
+                        name="button"
+                        id="price6"
+                      />
+                      <p class="radio-amount">BOSHQA</p>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="name-box">
+                  <label for="name">
+                    Tashkilot nomi
+                    <input
+                      class="input"
+                      type="text"
+                      name="company"
+                      id="company"
+                      placeholder="Orient group"
+                      autocomplete="off"
+                    />
+                  </label>
+                </div>
+
+                <button class="btn btn-main btn-primary">Yuborish</button>
+              </form>
             </div>
-        </section>
+
+            <div class="article">
+              <div class="article-quote">
+                <blockquote class="president-word">
+                  Yuqori sinfda bolalar shaxs bo'lib, jamoa bo'lib shakllanadi.
+                  Ayni o'sha paytda ularni o'zlari o'rgangan muhitdan ajratib
+                  qo'ymaslik kerak.
+                </blockquote>
+              </div>
+              <div class="president-word-wrapper">
+                <img
+                  class="user-img"
+                  src="./../../images/user.svg"
+                  alt="President pic"
+                />
+                <div class="user-info-box">
+                  <span class="president-name">Shavkat Mirziyoyev</span>
+                  <span class="president-degree"
+                    >O‘zbekiston Respublikasi Prezidenti</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <div class="hidden overlay" id="overlay"></div>
     <script src="./../../components/tab-enter/tab.js"></script>
     <script src="./../../components/header-sponsor/header.js"></script>
-</body>
+  </body>
 </html>

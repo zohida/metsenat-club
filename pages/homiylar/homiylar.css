@@ -16,6 +16,7 @@
 
 
 @media screen and (max-width:500px) {
+
     .pag-inner {
         display: flex;
         align-items: center;
@@ -23,4 +24,5 @@
         flex-direction: column;
         gap: 10px;
     }
+    
 }

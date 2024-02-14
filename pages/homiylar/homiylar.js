@@ -16,4 +16,48 @@ document.addEventListener("DOMContentLoaded", () => {
         filterStudentModal.classList.toggle("hidden");
         overlay.classList.add("hidden");
     })
+
+    showResult.addEventListener("click", () => {
+        filterStudentModal.classList.toggle("hidden");
+        overlay.classList.add("hidden");
+    })
+
+
+
+const modal = document.querySelector('.modal');
+const filterOptions = document.querySelectorAll('.options .option');
+
+filterBtn.addEventListener('click', () => {
+    modal.classList.remove('hidden');
 });
+
+closeModalBtn.addEventListener('click', () => {
+    modal.classList.add('hidden');
+});
+
+filterOptions.forEach(option => {
+    option.addEventListener('click', () => {
+        const selectedOption = option.textContent;
+        filterCards(selectedOption);
+    });
+});
+
+function filterCards(option) {
+    const cards = document.querySelectorAll('.homiy-card');
+    cards.forEach(card => {
+        const status = card.querySelector('.status-homiy').textContent.trim();
+        if (option === 'Barchasi' || status === option) {
+            card.style.display = 'flex';
+        } else {
+            card.style.display = 'none'; 
+        }
+    });
+}
+
+});
+
+clearBtn.addEventListener("click", () => {
+    filterStudentModal.classList.toggle("hidden");
+    overlay.classList.add("hidden");
+})
+
