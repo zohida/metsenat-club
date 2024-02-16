@@ -59,7 +59,7 @@ function handlePaginationClick(targetPage, currentPage) {
 }
 
 function showPage(page) {
-    const cards = document.querySelectorAll('.homiy-card');
+    const cards = document.querySelectorAll('.table-card');
     const startIndex = (page - 1) * cardsPerPage;
     const endIndex = startIndex + cardsPerPage;
 

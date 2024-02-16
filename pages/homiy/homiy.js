@@ -1,9 +1,9 @@
-const element = document.getElementById('tel');
-        
-        const maskOptions = {
-          mask: '+{998}(00)000-00-00'
-        };
-        const mask = IMask(element, maskOptions);
+const element = document.getElementById("tel");
+
+const maskOptions = {
+  mask: "+{998}(00)000-00-00",
+};
+const mask = IMask(element, maskOptions);
 
 document.addEventListener("DOMContentLoaded", () => {
   const sponsorEditBtn = document.getElementById("sponsorEditBtn");
@@ -28,13 +28,12 @@ document.addEventListener("DOMContentLoaded", () => {
     overlay.classList.add("hidden");
   });
 
-  const form = document.getElementById("formSponsor");
+  const form = document.getElementById("form-sponsor");
   const nameInput = document.getElementById("name");
   const telInput = document.getElementById("tel");
   const universityInput = document.getElementById("university");
   const studyDegreeInput = document.getElementById("amount1");
   const amountInput = document.getElementById("amount");
-
 
   form.addEventListener("submit", function (event) {
     event.preventDefault();
@@ -46,21 +45,25 @@ document.addEventListener("DOMContentLoaded", () => {
     if (nameInput.value.trim() === "") {
       displayErrorMessage("msgName", "F.I.SHni to'liq kiriting!!!");
       isValid = false;
+      return
     }
 
     if (telInput.value.trim() === "") {
       displayErrorMessage("msgTel", "Telefoningizni to'liq kiriting!!!");
       isValid = false;
+      return
     }
 
     if (universityInput.value.trim() === "") {
       displayErrorMessage("universityMsg", "Statusni kiriting!!!");
       isValid = false;
+      return
     }
 
     if (studyDegreeInput.value.trim() === "") {
       displayErrorMessage("studyDegreeMsg", "Summma miqdorini kiriting!!!");
       isValid = false;
+      return
     }
 
     if (amountInput.value.trim() === "") {
@@ -86,17 +89,15 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   function displayErrorMessage(id, message) {
-    const msgElement = document.getElementById(id);
-    if (msgElement) {
-      msgElement.textContent = message;
+    const errorText = document.getElementById(id);
+    if (errorText) {
+      errorText.textContent = message;
     }
   }
 
   function resetErrorMessages() {
-    document.querySelectorAll(".msg").forEach(function (msgElement) {
-      msgElement.textContent = "";
+    document.querySelectorAll(".error").forEach(function (errorText) {
+     errorText.textContent = "";
     });
   }
 });
-
-

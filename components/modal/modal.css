@@ -16,10 +16,6 @@
     padding: 28px 32px;
 }
 
-.hidden {
-    display: none;
-}
-
 .filter-header {
     display: flex;
     align-items: center;
@@ -121,7 +117,7 @@
 }
 
 
-.filter-edit-body::after {
+/* .filter-edit-body::after {
     position: absolute;
     max-width: 530px ;
     width: 100%;
@@ -129,7 +125,7 @@
     background: #F5F5F7;
     content: "";
     top: 370px;
-}
+} */
 
 
 .filter-edit-footer {
@@ -138,7 +134,7 @@
     max-width: 150px;
     width: 100%;
     margin-left: 380px;
-    margin-top: 56px;
+    margin-top: 20px;
 }
 
  /* HOMIY QO'SHISH STYLE  */

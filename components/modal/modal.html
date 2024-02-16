@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modal</title>
     <link rel="stylesheet" href="../form/input/input.css">
-    <link rel="stylesheet" href="../button/button.css">
     <link rel="stylesheet" href="./modal.css">
     <link rel="stylesheet" href="./../tab-enter/tab.css">
     <link rel="stylesheet" href="../form/dropdown/dropdown.css">
@@ -339,107 +338,161 @@
 
 
     <div class="modal">
-        <div class="student-edit  sponsor-edit">
-            <div class="filter-header">
-                <h3 class="filter-title">Tahrirlash</h3>
-                <button class="btn-close">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                        <path d="M21 7L7 21" stroke="#B2B7C1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M7 7L21 21" stroke="#B2B7C1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </button>
+        <div class="student-edit sponsor-edit " id="sponsorEditModal">
+          <div class="filter-header">
+            <h3 class="filter-title">Tahrirlash</h3>
+            <button class="btn-close" id="closeBtn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 28 28"
+                fill="none"
+              >
+                <path
+                  d="M21 7L7 21"
+                  stroke="#B2B7C1"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M7 7L21 21"
+                  stroke="#B2B7C1"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+  
+          <form id="form-sponsor">
+            <div class="filter-edit-body">
+              <div class="tab">
+                <ul class="tab-list">
+                  <li class="tab-item">
+                    <a class="tab-link" href="#"> JISMONIY SHAXS </a>
+                  </li>
+                  <li class="tab-item">
+                    <a class="tab-link" href="#"> YURIDIK SHAXS </a>
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="form-group">
+                <label class="form-label" for="name">
+                  F.I.Sh. (Familiya Ism Sharifingiz)
+                  <input
+                    class="form-input"
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Abdullayev Abdulla Abdulla o’g’li"
+                    autocomplete="off"
+                  />
+                  <span class="error" id="msgName"></span>
+                </label>
+              </div>
+  
+              <div class="form-group">
+                <label class="form-label" for="tel">
+                  Telefon raqam
+                  <input
+                    class="form-input"
+                    type="tel"
+                    name="tel"
+                    id="tel"
+                    placeholder="+998 00 000-00-00"
+                    autocomplete="off"
+                  />
+                  <span class="error" id="msgTel"></span>
+                </label>
+              </div>
+  
+              <div class="form-group">
+                <label for="university">
+                  holati
+                  <input
+                    class="form-input"
+                    type="text"
+                    name="university"
+                    id="university"
+                    placeholder="Tasdiqlangan"
+                    autocomplete="off"
+                  />
+                  <span class="error" id="universityMsg"></span>
+                </label>
+              </div>
+  
+              <div class="form-group">
+                <label class="form-label" for="amount">
+                  Homiylik summasi
+                  <input
+                    class="form-input"
+                    type="number"
+                    name="amount"
+                    id="amount1"
+                    placeholder="Summani kiriting"
+                    autocomplete="off"
+                  />
+                  <span class="error" id="studyDegreeMsg"></span>
+                </label>
+              </div>
+  
+              <div class="form-group">
+                <label class="form-label" for="amount">
+                  To'lov turi
+                  <input
+                    class="form-input"
+                    type="text"
+                    name="amount"
+                    id="amount"
+                    placeholder="Pul o‘tkazmalari"
+                    autocomplete="off"
+                  />
+                  <span class="error" id="amountMsg"></span>
+                </label>
+              </div>
             </div>
-            
-            <div  class="filter-edit-body">
-                
-                <div class="tab">
-                    <ul class="tab-list">
-                        <li class="tab-item">
-                            <a class="tab-link" href="#">
-                                JISMONIY SHAXS
-                            </a>
-                        </li>
-                        <li class="tab-item">
-                            <a class="tab-link" href="#">
-                                YURIDIK SHAXS
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="name-box">
-                    <label for="name">
-                        F.I.Sh. (Familiya Ism Sharifingiz)
-                        <input class="input"
-                        type="text" 
-                        name="name" 
-                        id="name" 
-                        placeholder="Abdullayev Abdulla Abdulla o’g’li"
-                        autocomplete="off">
-                    </label>
-                </div>
-                
-                <div class="name-box">
-                    <label for="tel">
-                        Telefon raqam
-                        <input class="input"
-                        type="tel" 
-                        name="tel" 
-                        id="tel" 
-                        placeholder="+998 00 000-00-00"
-                        autocomplete="off">
-                    </label>
-                </div> 
-                
-                <div class="name-box">
-                    <label for="university">
-                        holati
-                        <input class="input"
-                        type="text" 
-                        name="university" 
-                        id="universiteti" 
-                        placeholder="Tasdiqlangan"
-                        autocomplete="off">
-                    </label>
-                </div> 
-                
-                <div class="name-box">
-                    <label for="amount">
-                        Homiylik summasi
-                        <input class="input"
-                        type="number" 
-                        name="amount" 
-                        id="amount" 
-                        placeholder="Summani kiriting"
-                        autocomplete="off">
-                    </label>
-                </div>
-
-                <div class="name-box">
-                    <label for="amount">
-                        To'lov turi
-                        <input class="input"
-                        type="number" 
-                        name="amount" 
-                        id="amount" 
-                        placeholder="Pul o‘tkazmalari"
-                        autocomplete="off">
-                    </label>
-                </div>
-                
-            </div>
-            
+  
             <div class="filter-edit-footer">
-                <button class="btn btn-primary " id="saveBtn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                        <path d="M19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H16L21 8V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M17 21V13H7V21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M7 3V8H15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    Saqlash
-                </button>
+              <button class="btn btn-primary" id="saveBtn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H16L21 8V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21Z"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M17 21V13H7V21"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7 3V8H15"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                Saqlash
+              </button>
             </div>
+          </form>
         </div>
-    </div>
+      </div>
     
     <script src="../form/dropdown/dropdown.js"></script>
     <script src="./../tab-enter/tab.js"></script>

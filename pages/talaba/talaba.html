@@ -4,22 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Talaba</title>
-    <link rel="stylesheet" href="../../components/button/button.css" />
-    <link rel="stylesheet" href="../../components/header/header.css" />
-    <link rel="stylesheet" href="../../components/form/input/input.css" />
+  
     <link rel="stylesheet" href="../../components/cards/card.css" />
-    <link rel="stylesheet" href="../dashboard/dashboard.css" />
     <link rel="stylesheet" href="../../components/modal/modal.css" />
-    <link rel="stylesheet" href="../../components/status-btn/status.css" />
-    <link rel="stylesheet" href="../homiy/singlePageHomiy.css" />
     <link rel="stylesheet" href="./talaba.css" />
     <link rel="stylesheet" href="../../css/main.css" />
   </head>
   <body>
-    <header class="site-header">
-      <div class="container">
-        <div class="header-inner">
-          <a href="../../index.html">
+    <div class="site-header">
+      <div class="container header-inner">
+          <a href="#">
             <img
               src="../../images/logo.svg"
               alt="Logo"
@@ -53,13 +47,11 @@
               />
             </button>
           </div>
-        </div>
       </div>
-    </header>
+    </div>
 
     <div class="sponsor-info">
-      <div class="container">
-        <div class="single-student-info">
+      <div class="container single-student-info">
           <div class="student-btn-wrapper">
             <button class="btn-exit" id="studentExitBtn">
               <svg
@@ -115,17 +107,15 @@
                   stroke-linejoin="round"
                 />
               </svg>
-              Homiy qo‘shish
+              <span>Homiy qo‘shish</span>
             </button>
           </div>
-        </div>
       </div>
     </div>
 
     <main>
       <section class="sponsor">
-        <div class="container">
-          <div class="sponsor-card-wrap">
+        <div class="container sponsor-card-wrap">
             <div class="sponsor-card">
               <div class="sponsor-card-header">
                 <h2 class="sponsor-card-title sponsor-title">Talaba haqida</h2>
@@ -167,7 +157,7 @@
                         </clipPath>
                       </defs>
                     </svg>
-                    Tahrirlash
+                    <span>Tahrirlash</span>
                   </button>
                 </div>
               </div>
@@ -222,12 +212,11 @@
                 </div>
               </div>
             </div>
-          </div>
 
           <div class="sponsor-add-wrap">
             <div class="sponsor-card">
               <div class="sponsor-card-header">
-                <h2 class="sponsor-card-title">Talabaga homiylar</h2>
+                <h3 class="sponsor-card-title">Talabaga homiylar</h3>
                 <div class="tahrir-btn-wrapper">
                   <button class="btn btn-default" id="sponsorAddBtn2">
                     <svg
@@ -252,7 +241,7 @@
                         stroke-linejoin="round"
                       />
                     </svg>
-                    Homiy qo‘shish
+                   <span> Homiy qo‘shish</span>
                   </button>
                 </div>
               </div>
@@ -320,8 +309,10 @@
                   </li>
                 </ul>
               </div>
+
             </div>
           </div>
+
         </div>
       </section>
     </main>
@@ -367,11 +358,11 @@
         <form  id="sponsorEditForm">
 
             <div class="filter-edit-body">
-                <div class="name-box">
-                  <label for="name">
-                    F.I.Sh. (Familiya Ism Sharifingiz)
+                <div class="form-group">
+                  <label class="form-label" for="name">
+                   <span> F.I.Sh. (Familiya Ism Sharifingiz)</span>
                     <input
-                      class="input"
+                      class="form-input"
                       type="text"
                       name="name"
                       id="name2"
@@ -382,48 +373,48 @@
                   </label>
                 </div>
     
-                <div class="name-box">
-                  <label for="tel">
+                <div class="form-group">
+                  <label class="form-label" for="tel">
                     Telefon raqam
                     <input
-                      class="input"
+                      class="form-input"
                       type="tel"
                       name="tel"
                       id="tel"
                       placeholder="+998 00 000-00-00"
                       autocomplete="off"
                     />
-                    <span class="msg" id="msgTel"></span>
+                    <span class="error" id="msgTel"></span>
                   </label>
                 </div>
     
-                <div class="name-box">
+                <div class="form-group">
                   <label for="university">
-                    OTM
+                    <span>OTM</span>
                     <input
-                      class="input"
+                      class="form-input"
                       type="text"
                       name="university"
                       id="universiteti"
                       placeholder="O’zbekiston davlat jahon tillari universiteti"
                       autocomplete="off"
                     />
-                    <span class="msg" id="universityMsg"></span>
+                    <span class="error" id="universityMsg"></span>
                   </label>
                 </div>
     
-                <div class="name-box">
+                <div class="form-group">
                   <label for="amount">
-                    Kontrakt summa
+                    <span>Kontrakt summa</span>
                     <input
-                      class="input"
+                      class="form-input"
                       type="number"
                       name="amount"
                       id="amount2"
                       placeholder="Summani kiriting"
                       autocomplete="off"
                     />
-                    <span class="msg" id="msgAmount2"></span>
+                    <span class="error" id="msgAmount2"></span>
                   </label>
                 </div>
               </div>
@@ -459,7 +450,7 @@
                       stroke-linejoin="round"
                     />
                   </svg>
-                  Saqlash
+                  <span>Saqlash</span>
                 </button>
               </div>
         </form>
@@ -472,38 +463,38 @@
           <h3 class="filter-title">Homiylarni tahrirlash</h3>
         </div>
 
-        <form id="editInfoForm">
-            <div class="filter-body">
-                <div class="name-box">
-                  <label for="name">
-                    F.I.Sh. (Familiya Ism Sharifingiz)
+        <form id="editInfoForm"
+>
+                <div class="form-group">
+                  <label class="form-label" for="name">
+                    <span>F.I.Sh. (Familiya Ism Sharifingiz)</span>
                     <input
-                      class="input"
+                      class="form-input"
                       type="text"
                       name="name"
                       id="name3"
                       placeholder="Abdullayev Abdulla Abdulla o’g’li"
                       autocomplete="off"
                     />
-                    <span class="msg" id="msgName3"></span>
+                    <span class="error" id="msgName3"></span>
                   </label>
                 </div>
       
-                <div class="name-box">
-                  <label for="amount">
-                    Ajratilgan summa
+                <div class="form-group">
+                  <label class="form-label" for="amount">
+                    <span>Ajratilgan summa</span>
                     <input
-                      class="input"
+                      class="form-input"
                       type="number"
                       name="amount"
                       id="amount3"
                       placeholder="Summani kiriting"
                       autocomplete="off"
                     />
-                    <span class="msg" id="msgAmount3"></span>
+                    <span class="error" id="msgAmount3"></span>
                   </label>
                 </div>
-              </div>
+    
       
               <div class="sponsor-edit-footer">
                 <button class="btn btn-delete deleteBtn" id="deleteBtn">
@@ -543,7 +534,7 @@
                       stroke-linejoin="round"
                     />
                   </svg>
-                  Homiyni o‘chirish
+                  <span>Homiyni o‘chirish</span>
                 </button>
       
                 <button class="btn btn-primary saveBtn" id="saveBtn">
@@ -576,14 +567,13 @@
                       stroke-linejoin="round"
                     />
                   </svg>
-                  Saqlash
+                  <span>Saqlash</span>
                 </button>
               </div>
         </form>
       </div>
     </div>
 
-    <div class="modal">
       <div class="student-filter hidden" id="addSponsorModal">
         <div class="filter-header">
           <h3 class="filter-title">Homiylarni qo'shish</h3>
@@ -615,18 +605,18 @@
 
         <form id="sponsorAddForm">
           <div class="filter-body">
-            <div class="name-box">
-              <label for="name">
-                F.I.Sh. (Familiya Ism Sharifingiz)
+            <div class="form-group">
+              <label class="form-label" for="name">
+                <span>F.I.Sh. (Familiya Ism Sharifingiz)</span>
                 <input
-                  class="input"
+                  class="form-input"
                   type="text"
                   name="name"
                   id="name"
                   placeholder="Abdullayev Abdulla Abdulla o’g’li"
                   autocomplete="off"
                 />
-                <span class="msg" id="msgName"></span>
+                <span class="error" id="msgName"></span>
               </label>
             </div>
 
@@ -670,12 +660,11 @@
                   stroke-linejoin="round"
                 />
               </svg>
-              Qo‘shish
+              <span>Qo‘shish</span>
             </button>
           </div>
         </form>
       </div>
-    </div>
 
     <div class="overlay hidden" id="overlay"></div>
 

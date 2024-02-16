@@ -1,12 +1,18 @@
-document.getElementById('authForm').addEventListener('submit', function(event) {
+
+
+document.getElementById('auth-form').addEventListener('submit', (event) => {
     event.preventDefault();
 
-    var login = document.getElementById('login').value;
-    var password = document.getElementById('password').value;
+    const login = document.getElementById('login').value;
+    const password = document.getElementById('parol').value;
+    const parolMsg = document.getElementById('parol-msg');
+    const loginMsg = document.getElementById('login-msg');
+
+    
 
     if (login === "" || password === "") {
-        msg.innerText = "Loginingizni kiriting!!";
-        msg1.innerText = "Parolingizni kiriting!!";
+        loginMsg.innerText = "Loginingizni kiriting!!";
+        parolMsg.innerText = "Parolingizni kiriting!!";
         return;
     }
 

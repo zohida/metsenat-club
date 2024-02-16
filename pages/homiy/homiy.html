@@ -4,100 +4,86 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Single Page Sponsor</title>
-    <link rel="stylesheet" href="../../components/button/button.css" />
-    <link rel="stylesheet" href="../../components/header/header.css" />
-    <link rel="stylesheet" href="../../components/form/input/input.css" />
     <link rel="stylesheet" href="../../components/cards/card.css" />
-    <link rel="stylesheet" href="../dashboard/dashboard.css" />
-    <link rel="stylesheet" href="../../components/status-btn/status.css" />
-    <link rel="stylesheet" href="./singlePageHomiy.css" />
     <link rel="stylesheet" href="./../../components/modal/modal.css" />
     <link rel="stylesheet" href="../../components/tab-enter/tab.css" />
     <link rel="stylesheet" href="../../css/main.css" />
   </head>
   <body>
-    <header class="site-header">
-      <div class="container">
-        <div class="header-inner">
-          <a href="#">
-            <img
-              src="../../images/logo.svg"
-              alt="Logo"
-              width="173"
-              height="24"
-            />
-          </a>
-          <div class="header-profile-wrap">
-            <button class="user-btn" type="button">
-              <p class="header-user">Shohrux</p>
-              <svg
-                width="32"
-                height="32"
-                viewBox="0 0 32 32"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect width="32" height="32" rx="4" fill="#00AE69" />
-                <path
-                  d="M20.621 25.38C19.243 26.118 17.669 26.54 15.998 26.54C14.328 26.54 12.755 26.12 11.377 25.38C8.401 26.162 6.069 28.015 5 32H27C25.931 28.014 23.599 26.161 20.621 25.38ZM16 24C20.418 24 24 20.418 24 16C24 11.582 20.418 8 16 8C11.582 8 8 11.582 8 16C8 20.418 11.582 24 16 24ZM21.349 18.667C20.364 20.635 18.351 22 16 22C13.649 22 11.636 20.635 10.651 18.667H21.349Z"
-                  fill="#F1F1F3"
-                />
-              </svg>
-            </button>
-            <button class="exit-btn btn" id="exitBtn">
-              <img
-                src="../../images/exit-icon.svg"
-                alt="Exit icon"
-                width="32"
-                height="32"
-              />
-            </button>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <div class="sponsor-info">
-      <div class="container">
-        <div class="one-info">
-          <button class="btn-exit" id="homiyBtn">
+    <div class="site-header">
+      <div class="container header-inner">
+        <a href="#">
+          <img src="../../images/logo.svg" alt="Logo" width="173" height="24" />
+        </a>
+        <div class="header-profile-wrap">
+          <button class="user-btn" type="button">
+            <p class="header-user">Shohrux</p>
             <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="28"
-              height="28"
-              viewBox="0 0 28 28"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
               fill="none"
+              xmlns="http://www.w3.org/2000/svg"
             >
+              <rect width="32" height="32" rx="4" fill="#00AE69" />
               <path
-                d="M22.1663 14H5.83301"
-                stroke="black"
-                stroke-width="3"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M13.9997 22.1667L5.83301 14L13.9997 5.83334"
-                stroke="black"
-                stroke-width="3"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                d="M20.621 25.38C19.243 26.118 17.669 26.54 15.998 26.54C14.328 26.54 12.755 26.12 11.377 25.38C8.401 26.162 6.069 28.015 5 32H27C25.931 28.014 23.599 26.161 20.621 25.38ZM16 24C20.418 24 24 20.418 24 16C24 11.582 20.418 8 16 8C11.582 8 8 11.582 8 16C8 20.418 11.582 24 16 24ZM21.349 18.667C20.364 20.635 18.351 22 16 22C13.649 22 11.636 20.635 10.651 18.667H21.349Z"
+                fill="#F1F1F3"
               />
             </svg>
           </button>
-          <p class="sponsor-name">Ishmuhammedov Aziz Ishqobilovich</p>
-          <button class="btn btn-check">Tasdiqlangan</button>
+          <button class="exit-btn btn" id="exitBtn">
+            <img
+              src="../../images/exit-icon.svg"
+              alt="Exit icon"
+              width="32"
+              height="32"
+            />
+          </button>
         </div>
       </div>
     </div>
 
+    <div class="sponsor-info">
+      <div class="container sponsor-info-inner">
+        <button class="btn-exit" id="homiyBtn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="28"
+            viewBox="0 0 28 28"
+            fill="none"
+          >
+            <path
+              d="M22.1663 14H5.83301"
+              stroke="black"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M13.9997 22.1667L5.83301 14L13.9997 5.83334"
+              stroke="black"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+        <p class="sponsor-name">Ishmuhammedov Aziz Ishqobilovich</p>
+        <button class="btn btn-check">
+          <span>Tasdiqlangan</span>
+        </button>
+      </div>
+    </div>
+
     <main>
-      <section class="sponsor">
-        <div class="container">
-          <div class="sponsor-card-wrap">
+      <div class="sponsor">
+        <div class="container sponsor-card-wrap">
             <div class="sponsor-card">
               <div class="sponsor-card-header">
                 <h2 class="sponsor-card-title">Homiy haqida</h2>
-                <div class="tahrir-btn-wrapper">
+                <div class="edit-btn-wrapper">
                   <button class="btn btn-default" id="sponsorEditBtn">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -135,7 +121,7 @@
                         </clipPath>
                       </defs>
                     </svg>
-                    Tahrirlash
+                    <span>Tahrirlash</span>
                   </button>
                 </div>
               </div>
@@ -164,19 +150,19 @@
                   <p class="sponsor-money">30 000 000 UZS</p>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
 
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-inner">
-          <img src="../../images/bg.png" alt="Background Img" width="820" />
+            </div>
         </div>
       </div>
-    </footer>
+    </main>
+
+    <div class="footer">
+      <div class="container">
+          <div class="footer-inner">
+            <img src="../../images/bg.png" alt="Background Img" width="820" />
+          </div>
+      </div>
+    </div>
 
     <!-- Modal -->
 
@@ -210,9 +196,12 @@
           </button>
         </div>
 
-        <form id="formSponsor">
-          <div class="filter-edit-body">
-            <div class="tab">
+        <form id="form-sponsor">
+          <div
+            class=""
+            style="display: flex; flex-direction: column; gap: 20px"
+          >
+            <div class="tab" style="margin-top: 50px">
               <ul class="tab-list">
                 <li class="tab-item">
                   <a class="tab-link" href="#"> JISMONIY SHAXS </a>
@@ -222,78 +211,81 @@
                 </li>
               </ul>
             </div>
-            <div class="name-box">
-              <label for="name">
-                F.I.Sh. (Familiya Ism Sharifingiz)
+
+            <div class="form-group">
+              <label 
+              class="form-label" 
+              for="name">
+                <span>F.I.Sh. (Familiya Ism Sharifingiz)</span>
                 <input
-                  class="input"
+                  class="form-input"
                   type="text"
                   name="name"
                   id="name"
                   placeholder="Abdullayev Abdulla Abdulla o’g’li"
                   autocomplete="off"
                 />
-                <span class="msg" id="msgName"></span>
+                <span class="error" id="msgName"></span>
               </label>
             </div>
 
-            <div class="name-box">
-              <label for="tel">
-                Telefon raqam
+            <div class="form-group">
+              <label class="form-label" for="tel">
+                <span>Telefon raqam</span>
                 <input
-                  class="input"
+                  class="form-input"
                   type="tel"
                   name="tel"
                   id="tel"
                   placeholder="+998 00 000-00-00"
                   autocomplete="off"
                 />
-                <span class="msg" id="msgTel"></span>
+                <span class="error" id="msgTel"></span>
               </label>
             </div>
 
-            <div class="name-box">
+            <div class="form-group">
               <label for="university">
-                holati
+                <span>holati</span>
                 <input
-                  class="input"
+                  class="form-input"
                   type="text"
                   name="university"
                   id="university"
                   placeholder="Tasdiqlangan"
                   autocomplete="off"
                 />
-                <span class="msg" id="universityMsg"></span>
+                <span class="error" id="universityMsg"></span>
               </label>
             </div>
 
-            <div class="name-box">
-              <label for="amount">
-                Homiylik summasi
+            <div class="form-group">
+              <label class="form-label" for="amount">
+                <span>Homiylik summasi</span>
                 <input
-                  class="input"
+                  class="form-input"
                   type="number"
                   name="amount"
                   id="amount1"
                   placeholder="Summani kiriting"
                   autocomplete="off"
                 />
-                <span class="msg" id="studyDegreeMsg"></span>
+                <span class="error" id="studyDegreeMsg"></span>
               </label>
             </div>
 
-            <div class="name-box">
-              <label for="amount">
-                To'lov turi
+            <div class="form-group">
+              <label class="form-label" for="amount">
+                <span>To'lov turi</span>
                 <input
-                  class="input"
+                  class="form-input"
                   type="text"
                   name="amount"
                   id="amount"
                   placeholder="Pul o‘tkazmalari"
                   autocomplete="off"
                 />
-                <span class="msg" id="amountMsg"></span>
+                <span class="error" id="amountMsg"></span>
               </label>
             </div>
           </div>
@@ -329,17 +321,19 @@
                   stroke-linejoin="round"
                 />
               </svg>
-              Saqlash
+              <span>Saqlash</span>
             </button>
           </div>
+
         </form>
+
       </div>
     </div>
 
     <div class="overlay hidden" id="overlay"></div>
+
     <script src="https://unpkg.com/imask"></script>
     <script src="./homiy.js"></script>
     <script src="./../../components/tab-enter/tab.js"></script>
-
   </body>
 </html>
