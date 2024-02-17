@@ -759,6 +759,9 @@ label {
     padding-bottom: 40px;
   }
 
+  .footer {
+    display: none;
+  }
   .btn-check {
     position: absolute;
     left: 40px;
@@ -1173,7 +1176,5 @@ label {
   }
 
 }
-
-
 
 

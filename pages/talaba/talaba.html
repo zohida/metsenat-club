@@ -197,7 +197,7 @@
                 </div>
                 <div class="sponsor-card-item">
                   <p class="sponsor-amount">Talabalik turi</p>
-                  <p class="sponsor-money">Bakalavr</p>
+                  <p class="sponsor-univer-degree">Bakalavr</p>
                 </div>
               </div>
 
@@ -208,7 +208,7 @@
                 </div>
                 <div class="sponsor-card-item">
                   <p class="sponsor-amount">Kontrakt miqdori</p>
-                  <p class="sponsor-money">30 000 000 UZS</p>
+                  <p class="sponsor-univer-degree">30 000 000 UZS</p>
                 </div>
               </div>
             </div>
@@ -247,25 +247,25 @@
               </div>
 
               <div class="sponsor-student-info">
-                <ul>
+                <ul class="table-page">
                   <li>
-                    <ul class="personal-quiz">
-                      <li class="quiz id-sponsor">#</li>
-                      <li class="quiz name-sponsor">f.i.sh.</li>
-                      <li class="quiz usage-sponsor">Ajratilingan summa</li>
-                      <li class="quiz action-sponsor">Amallar</li>
+                    <ul class="sponsor-cards">
+                      <li class="info-sponsor id-sponsor">#</li>
+                      <li class="info-sponsor  name-sponsor">f.i.sh.</li>
+                      <li class="info-sponsor usage-sponsor">Ajratilingan summa</li>
+                      <li class="info-sponsor  action-sponsor">Amallar</li>
                     </ul>
                   </li>
                   <li>
                     <ul class="sponsor-add-card">
-                      <li class="info sponsor-id">1</li>
-                      <li class="info sponsor-name">
+                      <li class="card-info id-sponsor">1</li>
+                      <li class="card-info name-sponsor">
                         Alimov Abror Xabibullayevich
                       </li>
-                      <li class="info sponsor-money">
+                      <li class="card-info usage-sponsor">
                         30 000 000 <span class="currency">UZS</span>
                       </li>
-                      <li>
+                      <li class="action-sponsor">
                         <button class="" id="sponsorEdit">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -375,7 +375,7 @@
     
                 <div class="form-group">
                   <label class="form-label" for="tel">
-                    Telefon raqam
+                    <span>Telefon raqam</span>
                     <input
                       class="form-input"
                       type="tel"
@@ -460,12 +460,12 @@
     <div class="modal">
       <div class="student-filter hidden" id="SponsorEditModal">
         <div class="filter-header">
-          <h3 class="filter-title">Homiylarni tahrirlash</h3>
+          <h3 class="filter-title" style="margin-bottom: 20px;">Homiylarni tahrirlash</h3>
         </div>
 
         <form id="editInfoForm"
->
-                <div class="form-group">
+        style="display: flex; flex-direction: column; gap: 20px;">
+                <div class="form-group" >
                   <label class="form-label" for="name">
                     <span>F.I.Sh. (Familiya Ism Sharifingiz)</span>
                     <input
@@ -496,7 +496,7 @@
                 </div>
     
       
-              <div class="sponsor-edit-footer">
+              <div class="sponsor-edit-footer" style="margin-top: 20px;">
                 <button class="btn btn-delete deleteBtn" id="deleteBtn">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -603,7 +603,8 @@
           </button>
         </div>
 
-        <form id="sponsorAddForm">
+        <form id="sponsorAddForm"
+        style="display: flex; flex-direction: column; gap: 20px;">
           <div class="filter-body">
             <div class="form-group">
               <label class="form-label" for="name">
@@ -620,18 +621,18 @@
               </label>
             </div>
 
-            <div class="name-box">
+            <div class="form-group">
               <label for="amount">
-                Ajratilgan summa
+                <span>Ajratilgan summa</span>
                 <input
-                  class="input"
+                  class="form-input"
                   type="number"
                   name="amount"
                   id="amount"
                   placeholder="Summani kiriting"
                   autocomplete="off"
                 />
-                <span class="msg" id="msgAmount"></span>
+                <span class="error" id="msgAmount"></span>
               </label>
             </div>
           </div>
