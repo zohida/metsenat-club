@@ -1,286 +1,533 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homiylar page</title>
-    <link rel="stylesheet" href="../../components/tab/tab.css">
-    <link rel="stylesheet" href="../../components/modal/modal.css">
-    <link rel="stylesheet" href="../../css/main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homiylar page</title>
+  <link rel="stylesheet" href="../../components/tab/tab.css">
+  <link rel="stylesheet" href="../../components/modal/modal.css">
+  <link rel="stylesheet" href="../../css/main.css">
 </head>
 <body>
-    
-    <div class="site-header">
-        <div class="container header-inner">
-            <a href="#">
-              <img
-                src="../../images/logo.svg"
-                alt="Logo"
-                width="173"
-                height="24"
-              />
-            </a>
-            <div class="header-profile-wrap">
-              <button class="user-btn" type="button">
-                <p class="header-user">Shohrux</p>
-                <svg
-                  width="32"
-                  height="32"
-                  viewBox="0 0 32 32"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect width="32" height="32" rx="4" fill="#00AE69" />
-                  <path
-                    d="M20.621 25.38C19.243 26.118 17.669 26.54 15.998 26.54C14.328 26.54 12.755 26.12 11.377 25.38C8.401 26.162 6.069 28.015 5 32H27C25.931 28.014 23.599 26.161 20.621 25.38ZM16 24C20.418 24 24 20.418 24 16C24 11.582 20.418 8 16 8C11.582 8 8 11.582 8 16C8 20.418 11.582 24 16 24ZM21.349 18.667C20.364 20.635 18.351 22 16 22C13.649 22 11.636 20.635 10.651 18.667H21.349Z"
-                    fill="#F1F1F3"
-                  />
-                </svg>
-              </button>
-              <button class="exit-btn btn" id="exitBtn">
-                <img
-                  src="../../images/exit-icon.svg"
-                  alt="Exit icon"
-                  width="32"
-                  height="32"
-                />
-              </button>
-            </div>
-        </div>
-      </div>
   
-      <div class="hero" style="background-color: #fefefee4">
-        <div class="container hero-inner">
-            <div class="">
-              <div class="tab">
-                <ul class="tab-list">
-                  <li class="tab-item">
-                    <a
-                      href="../../pages/dashboard/dashboard.html"
-                      class="tab-link dashboard"
-                    >
-                      Dashboard
-                    </a>
-                  </li>
-                  <li class="tab-item">
-                    <a
-                      href="../../pages/homiylar/homiylar.html"
-                      class="tab-link homiylar"
-                    >
-                      Homiylar
-                    </a>
-                  </li>
-                  <li class="tab-item">
-                    <a
-                      href="../../pages/talabalar/talabalar.html"
-                      class="tab-link talabalar"
-                    >
-                      Talabalar
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-  
-            <div class="hero-buttons"
-            style="display: flex; align-items: center; gap: 20px;">
-              <div class="search">
-                <input 
-                class="search-input" 
-                type="search" 
-                placeholder="Izlash" />
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 20 20"
-                  fill="none"
-                >
-                  <g clip-path="url(#clip0_120_1388)">
-                    <path
-                      d="M8.33333 14.1667C11.555 14.1667 14.1667 11.555 14.1667 8.33333C14.1667 5.11167 11.555 2.5 8.33333 2.5C5.11167 2.5 2.5 5.11167 2.5 8.33333C2.5 11.555 5.11167 14.1667 8.33333 14.1667Z"
-                      stroke="#B1B1B8"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M17.5 17.5L12.5 12.5"
-                      stroke="#B1B1B8"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_120_1388">
-                      <rect width="20" height="20" fill="white" />
-                    </clipPath>
-                  </defs>
-                </svg>
-              </div>
-  
-              <div class="filter-wrapper">
-                <button class="btn btn-default" id="filterBtn">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    fill="none"
-                  >
-                    <path
-                      d="M12.6668 1.33334H3.3335C2.80306 1.33334 2.29436 1.54405 1.91928 1.91912C1.54421 2.2942 1.3335 2.8029 1.3335 3.33334V4.11334C1.3334 4.38863 1.39014 4.66098 1.50016 4.91334V4.95334C1.59435 5.16732 1.72776 5.36178 1.8935 5.52667L6.00016 9.60667V14C5.99994 14.1133 6.02859 14.2248 6.08341 14.3239C6.13823 14.4231 6.21742 14.5066 6.3135 14.5667C6.41959 14.6324 6.54201 14.6671 6.66683 14.6667C6.77119 14.666 6.87395 14.6409 6.96683 14.5933L9.6335 13.26C9.74344 13.2046 9.83589 13.1198 9.90061 13.0151C9.96533 12.9104 9.99979 12.7898 10.0002 12.6667V9.60667L14.0802 5.52667C14.2459 5.36178 14.3793 5.16732 14.4735 4.95334V4.91334C14.5927 4.66296 14.6585 4.39052 14.6668 4.11334V3.33334C14.6668 2.8029 14.4561 2.2942 14.081 1.91912C13.706 1.54405 13.1973 1.33334 12.6668 1.33334ZM8.86016 8.86C8.79838 8.9223 8.74949 8.99617 8.71632 9.0774C8.68314 9.15862 8.66632 9.2456 8.66683 9.33334V12.2533L7.3335 12.92V9.33334C7.334 9.2456 7.31719 9.15862 7.28401 9.0774C7.25083 8.99617 7.20195 8.9223 7.14016 8.86L3.60683 5.33334H12.3935L8.86016 8.86ZM13.3335 4H2.66683V3.33334C2.66683 3.15652 2.73707 2.98696 2.86209 2.86193C2.98712 2.73691 3.15669 2.66667 3.3335 2.66667H12.6668C12.8436 2.66667 13.0132 2.73691 13.1382 2.86193C13.2633 2.98696 13.3335 3.15652 13.3335 3.33334V4Z"
-                      fill="#3365FC"
-                    />
-                  </svg>
-                  <p class="text">Filter</p>
-                </button>
-              </div>
-            </div>
-        </div>
-      </div>
-    
-    <main>
-        <section class="homiy-info">
-            <div class="container">
-                <div class="homiy-inner">
-                    <ul>
-                        <li >
-                            <ul class="personal-quiz">
-                                <li class="quiz homiy-id">#</li>
-                                <li class="quiz homiy-name">f.i.sh.</li>
-                                <li class="quiz homiy-tel">Tel.Raqami</li>
-                                <li class="quiz homiy-money">Homiylik summasi</li>
-                                <li class="quiz homiy-usage">Sarflangan summa</li>
-                                <li class="quiz homiy-data">Sana</li>
-                                <li class="quiz homiy-status">Holati</li>
-                                <li class="quiz homiy-action">Amallar</li>
-                            </ul>
-                        </li>
-                        <li >
-                            <ul class="homiy-card">
-                                <li class="info id-homiy">1</li>
-                                <li class="info name-homiy">Alimov Abror Xabibullayevich</li>
-                                <li >
-                                    <a class="info tel-homiy" href="tel:+998999737260">+99899 973-72-60</a>
-                                </li>
-                                <li class="info money-homiy">30 000 000 <span class="currency">UZS</span></li>
-                                <li class="info usage-homiy">0 <span class="currency">UZS</span></li>
-                                <li class="info data-homiy">15.01.2021</li>
-                                <li class="info status-homiy new">Yangi</li>
-                                <li>
-                                    <a href="../homiy/homiy.html">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                            <path opacity="0.4" d="M23.855 11.3917C21.5954 6.98292 17.1221 4 12 4C6.87789 4 2.40331 6.985 0.144977 11.3921C0.0496613 11.5806 0 11.7889 0 12.0002C0 12.2115 0.0496613 12.4198 0.144977 12.6083C2.40456 17.0171 6.87789 20 12 20C17.1221 20 21.5966 17.015 23.855 12.6079C23.9503 12.4194 24 12.2111 24 11.9998C24 11.7885 23.9503 11.5802 23.855 11.3917ZM12.0058 18H12C10.4097 17.9992 8.88485 17.3669 7.76077 16.2419C6.63669 15.117 6.00542 13.5917 6.00581 12.0015C6.0062 10.4112 6.6382 8.88618 7.76283 7.76182C8.88746 6.63747 10.4126 6.00583 12.0029 6.00583C13.5932 6.00583 15.1183 6.63747 16.243 7.76182C17.3676 8.88618 17.9996 10.4112 18 12.0015C18.0004 13.5917 17.3691 15.117 16.245 16.2419C15.1209 17.3669 13.5961 17.9992 12.0058 18Z" fill="#3366FF"/>
-                                            <path d="M15.8608 13.0363C15.7247 13.5433 15.4899 14.0186 15.1698 14.4347C14.8497 14.8509 14.4506 15.1998 13.9955 15.4614C13.5403 15.7231 13.038 15.8924 12.5173 15.9596C11.9966 16.0268 11.4677 15.9906 10.961 15.853C10.4544 15.7155 9.97979 15.4794 9.56452 15.1581C9.14926 14.8368 8.80147 14.4368 8.54107 13.9809C8.28068 13.525 8.11279 13.0222 8.04704 12.5013C7.98129 11.9805 8.01897 11.4517 8.15791 10.9454C8.54194 11.228 9.01453 11.3636 9.48997 11.3277C9.96541 11.2917 10.4122 11.0865 10.7494 10.7494C11.0865 10.4122 11.2917 9.96542 11.3276 9.48998C11.3636 9.01454 11.228 8.54195 10.9454 8.15792C11.6237 7.96431 12.3412 7.95486 13.0243 8.13054C13.7075 8.30621 14.3314 8.66067 14.8321 9.15747C15.3328 9.65426 15.6922 10.2755 15.8732 10.9572C16.0542 11.6389 16.0504 12.3565 15.8621 13.0363H15.8608Z" fill="#3366FF"/>
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
-                            
-                        </li>
-                    </ul>
-                </div>
-                
-            </div>
-        </section>
-    </main>
-    
-    <div class="modal">
-        <div class="student-filter hidden" id="filterStudentModal">
-            <div class="filter-header">
-                <h3 class="filter-title">Filter</h3>
-                <button class="btn-close" id="closeModalBtn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                        <path d="M21 7L7 21" stroke="#B2B7C1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M7 7L21 21" stroke="#B2B7C1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </button>
-            </div>
-            
-            <div class="filter-sponsor-body">
-                
-                <div class="form-group">
-                    
-                    <div class="dropdown">
-                        <label style="margin-bottom: 6px;" >Ariza Holati</label>
-                        <div class="menu">
-                            <span class="menu-text">Barchasi</span>
-                            <button class="btn-dropdown">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
-                                    <path d="M15.8521 7.60181C16.2101 7.24383 16.7905 7.24383 17.1485 7.60181C17.5065 7.95979 17.5065 8.54019 17.1485 8.89817L11.6485 14.3982C11.3015 14.7452 10.7427 14.7573 10.3809 14.4257L4.88091 9.38405C4.50772 9.04195 4.48251 8.4621 4.8246 8.08891C5.16669 7.71572 5.74655 7.6905 6.11974 8.0326L10.9728 12.4812L15.8521 7.60181Z" fill="#B5B5C3"/>
-                                </svg>
-                            </button>
-                        </div>
-                        <ul class="options">
-                            <li class="option">Barchasi</li>
-                            <li class="option">Moderatsiyada</li>
-                            <li class="option">Yangi</li>
-                            <li class="option">Tasdiqlangan</li>
-                            <li class="option">Bekor qilingan</li>
-                        </ul>
-                    </div>
-                </div> 
-                
-                <div class="form-group modal-date">
-                    <label for="date">
-                        Sana
-                        <input id="date" name="date" type="date" class="input">
-                    </label>
-                </div>
-            </div>
-            
-            <div class="filter-footer">
-                <button class="btn btn-secondary disabled" id="clearBtn">
-                    <svg class="btn-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                        <path d="M19.6454 10.0047C19.3874 9.88994 16.9725 8.8149 16.7137 8.70016C15.4993 8.15956 14.0769 8.70632 13.5371 9.91997L20.8652 13.1813C21.4058 11.9669 20.8591 10.5445 19.6454 10.0047ZM21.4166 2.07743C21.0116 1.89723 20.5811 1.94343 20.4494 2.19063L16.9408 8.8011L19.3081 9.85381L21.9803 2.87138C22.0758 2.60802 21.8217 2.25763 21.4166 2.07743Z" stroke="#3366FF" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M19.6772 14.2178C18.1732 18.7967 16.2264 21.167 16.2264 21.167C16.2264 21.167 9.52132 20.9237 5.17188 15.5546C6.06979 15.6186 11.6675 15.1373 13.5958 11.4185" stroke="#3366FF" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M7.77051 18.0255C7.77051 18.0255 9.89439 17.7455 11.0341 16.5549C10.1223 18.2268 9.03653 18.861 9.03653 18.861L7.77051 18.0255ZM10.7646 19.6996C10.7646 19.6996 12.4349 19.7184 15.2765 17.1009C14.2546 19.4312 12.922 20.5622 12.922 20.5622L10.7646 19.6996Z" stroke="#3366FF" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M3.20337 9.04437C3.27136 9.0162 3.34423 9.00171 3.41782 9.00171C3.49142 9.00171 3.56429 9.0162 3.63228 9.04437C3.70027 9.07253 3.76205 9.11381 3.81409 9.16585C3.86612 9.21788 3.9074 9.27966 3.93557 9.34765C3.96373 9.41564 3.97822 9.48852 3.97822 9.56211C3.97822 9.6357 3.96373 9.70858 3.93557 9.77657C3.9074 9.84456 3.86612 9.90634 3.81409 9.95837C3.76205 10.0104 3.70027 10.0517 3.63228 10.0799C3.56429 10.108 3.49142 10.1225 3.41782 10.1225C3.34423 10.1225 3.27136 10.108 3.20337 10.0799C3.13538 10.0517 3.0736 10.0104 3.02156 9.95837C2.96952 9.90634 2.92824 9.84456 2.90008 9.77657C2.87192 9.70858 2.85742 9.6357 2.85742 9.56211C2.85742 9.48852 2.87192 9.41564 2.90008 9.34765C2.92824 9.27966 2.96952 9.21788 3.02156 9.16585C3.0736 9.11381 3.13538 9.07253 3.20337 9.04437Z" fill="#3366FF"/>
-                        <path d="M4.83485 9.48473C4.90491 9.41467 4.99994 9.37531 5.09903 9.37531C5.19811 9.37531 5.29314 9.41467 5.3632 9.48473C5.43327 9.5548 5.47263 9.64983 5.47263 9.74891C5.47263 9.848 5.43327 9.94302 5.3632 10.0131C5.29314 10.0831 5.19811 10.1225 5.09903 10.1225C4.99994 10.1225 4.90491 10.0831 4.83485 10.0131C4.76479 9.94302 4.72543 9.848 4.72543 9.74891C4.72543 9.64983 4.76479 9.5548 4.83485 9.48473Z" fill="#3366FF"/>
-                        <path d="M4.25179 11.1433C4.42695 10.9681 4.66451 10.8697 4.91223 10.8697C5.15994 10.8697 5.39751 10.9681 5.57266 11.1433C5.74782 11.3184 5.84623 11.556 5.84623 11.8037C5.84623 12.0514 5.74782 12.289 5.57266 12.4642C5.39751 12.6393 5.15994 12.7377 4.91223 12.7377C4.66451 12.7377 4.42695 12.6393 4.25179 12.4642C4.07663 12.289 3.97822 12.0514 3.97822 11.8037C3.97822 11.556 4.07663 11.3184 4.25179 11.1433Z" fill="#3366FF"/>
-                    </svg>
-                    Tozalash
-                </button>
-                
-                <button class="btn btn-primary" id="showResult">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                        <path d="M2 12C2 12 5.63636 4.72729 12 4.72729C18.3636 4.72729 22 12 22 12C22 12 18.3636 19.2727 12 19.2727C5.63636 19.2727 2 12 2 12Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M11.9997 14.7273C13.506 14.7273 14.727 13.5063 14.727 12C14.727 10.4938 13.506 9.27277 11.9997 9.27277C10.4935 9.27277 9.27246 10.4938 9.27246 12C9.27246 13.5063 10.4935 14.7273 11.9997 14.7273Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    Natijalarni ko‘rish
-                </button>
-            </div>
-        </div>
+  <div class="site-header">
+    <div class="container header-inner">
+      <a href="#">
+        <img
+        src="../../images/logo.svg"
+        alt="Logo"
+        width="173"
+        height="24"
+        />
+      </a>
+      <div class="header-profile-wrap">
+        <button class="user-btn" type="button">
+          <p class="header-user">Shohrux</p>
+          <svg
+          width="32"
+          height="32"
+          viewBox="0 0 32 32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          >
+          <rect width="32" height="32" rx="4" fill="#00AE69" />
+          <path
+          d="M20.621 25.38C19.243 26.118 17.669 26.54 15.998 26.54C14.328 26.54 12.755 26.12 11.377 25.38C8.401 26.162 6.069 28.015 5 32H27C25.931 28.014 23.599 26.161 20.621 25.38ZM16 24C20.418 24 24 20.418 24 16C24 11.582 20.418 8 16 8C11.582 8 8 11.582 8 16C8 20.418 11.582 24 16 24ZM21.349 18.667C20.364 20.635 18.351 22 16 22C13.649 22 11.636 20.635 10.651 18.667H21.349Z"
+          fill="#F1F1F3"
+          />
+        </svg>
+      </button>
+      <button class="exit-btn btn" id="exitBtn">
+        <img
+        src="../../images/exit-icon.svg"
+        alt="Exit icon"
+        width="32"
+        height="32"
+        />
+      </button>
     </div>
-    
+  </div>
+</div>
 
-    <div class="pag-wrap">
-        <div class="container pag-inner">
-          <p class="pag-title">59 tadan 1-10 ko‘rsatilmoqda</p>
-          <ul class="pagination" id="pagination">
-            <li class="pagination-list">
-              <a href="#" id="prev">
-                <img src="./../../images/pag-icon-left.svg" alt="" />
-              </a>
+<div class="hero" style="background-color: #fefefee4">
+  <div class="container hero-inner">
+    <div class="">
+      <div class="tab">
+        <ul class="tab-list">
+          <li class="tab-item">
+            <a
+            href="../../pages/dashboard/dashboard.html"
+            class="tab-link dashboard"
+            >
+            Dashboard
+          </a>
+        </li>
+        <li class="tab-item">
+          <a
+          href="../../pages/homiylar/homiylar.html"
+          class="tab-link homiylar"
+          >
+          Homiylar
+        </a>
+      </li>
+      <li class="tab-item">
+        <a
+        href="../../pages/talabalar/talabalar.html"
+        class="tab-link talabalar"
+        >
+        Talabalar
+      </a>
+    </li>
+  </ul>
+</div>
+</div>
+
+<div class="hero-buttons"
+style="display: flex; align-items: center; gap: 20px;">
+<div class="search">
+  <input 
+  class="search-input" 
+  type="search" 
+  placeholder="Izlash" />
+  <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 20 20"
+  fill="none"
+  >
+  <g clip-path="url(#clip0_120_1388)">
+    <path
+    d="M8.33333 14.1667C11.555 14.1667 14.1667 11.555 14.1667 8.33333C14.1667 5.11167 11.555 2.5 8.33333 2.5C5.11167 2.5 2.5 5.11167 2.5 8.33333C2.5 11.555 5.11167 14.1667 8.33333 14.1667Z"
+    stroke="#B1B1B8"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    />
+    <path
+    d="M17.5 17.5L12.5 12.5"
+    stroke="#B1B1B8"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    />
+  </g>
+  <defs>
+    <clipPath id="clip0_120_1388">
+      <rect width="20" height="20" fill="white" />
+    </clipPath>
+  </defs>
+</svg>
+</div>
+
+<div class="filter-wrapper">
+  <button class="btn btn-default" id="filterBtn">
+    <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="16"
+    height="16"
+    viewBox="0 0 16 16"
+    fill="none"
+    >
+    <path
+    d="M12.6668 1.33334H3.3335C2.80306 1.33334 2.29436 1.54405 1.91928 1.91912C1.54421 2.2942 1.3335 2.8029 1.3335 3.33334V4.11334C1.3334 4.38863 1.39014 4.66098 1.50016 4.91334V4.95334C1.59435 5.16732 1.72776 5.36178 1.8935 5.52667L6.00016 9.60667V14C5.99994 14.1133 6.02859 14.2248 6.08341 14.3239C6.13823 14.4231 6.21742 14.5066 6.3135 14.5667C6.41959 14.6324 6.54201 14.6671 6.66683 14.6667C6.77119 14.666 6.87395 14.6409 6.96683 14.5933L9.6335 13.26C9.74344 13.2046 9.83589 13.1198 9.90061 13.0151C9.96533 12.9104 9.99979 12.7898 10.0002 12.6667V9.60667L14.0802 5.52667C14.2459 5.36178 14.3793 5.16732 14.4735 4.95334V4.91334C14.5927 4.66296 14.6585 4.39052 14.6668 4.11334V3.33334C14.6668 2.8029 14.4561 2.2942 14.081 1.91912C13.706 1.54405 13.1973 1.33334 12.6668 1.33334ZM8.86016 8.86C8.79838 8.9223 8.74949 8.99617 8.71632 9.0774C8.68314 9.15862 8.66632 9.2456 8.66683 9.33334V12.2533L7.3335 12.92V9.33334C7.334 9.2456 7.31719 9.15862 7.28401 9.0774C7.25083 8.99617 7.20195 8.9223 7.14016 8.86L3.60683 5.33334H12.3935L8.86016 8.86ZM13.3335 4H2.66683V3.33334C2.66683 3.15652 2.73707 2.98696 2.86209 2.86193C2.98712 2.73691 3.15669 2.66667 3.3335 2.66667H12.6668C12.8436 2.66667 13.0132 2.73691 13.1382 2.86193C13.2633 2.98696 13.3335 3.15652 13.3335 3.33334V4Z"
+    fill="#3365FC"
+    />
+  </svg>
+  <p class="text">Filter</p>
+</button>
+</div>
+</div>
+</div>
+</div>
+
+<main>
+  <section class="homiy-info">
+    <div class="container homiy-inner">
+      
+      <ul class="table">
+
+        <li >
+          <ul class="personal-quiz">
+            <li class="quiz sponsor-id">#</li>
+            <li class="quiz sponsor-name">f.i.sh.</li>
+            <li class="quiz sponsor-phone">Tel.Raqami</li>
+            <li class="quiz sponsor-money">Homiylik summasi</li>
+            <li class="quiz sponsor-usage">Sarflangan summa</li>
+            <li class="quiz sponsor-data">Sana</li>
+            <li class="quiz sponsor-status">Holati</li>
+            <li class="quiz sponsor-action">Amallar</li>
+          </ul>
+        </li>
+
+        <li >
+          <ul class="table-card">
+            <li class="card-info sponsor-id">1</li>
+            <li class="card-info sponsor-name">Alimov Abror Xabibullayevich</li>
+            <li >
+              <a class="card-info sponsor-phone phone-num" href="tel:+998999737260">+99899 973-72-60</a>
             </li>
-            <li><a href="#" class="page-link">1</a></li>
+            <li class="card-info sponsor-money">30 000 000 <span class="currency">UZS</span></li>
+            <li class="card-info sponsor-usage">0 <span class="currency">UZS</span></li>
+            <li class="card-info sponsor-data phone-num">15.01.2021</li>
+            <li class="card-info sponsor-status new">Yangi</li>
             <li>
-              <a href="#" id="next">
-                <img src="./../../images/pag-icon-right.svg" alt="" />
+              <a href="../homiy/homiy.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path opacity="0.4" d="M23.855 11.3917C21.5954 6.98292 17.1221 4 12 4C6.87789 4 2.40331 6.985 0.144977 11.3921C0.0496613 11.5806 0 11.7889 0 12.0002C0 12.2115 0.0496613 12.4198 0.144977 12.6083C2.40456 17.0171 6.87789 20 12 20C17.1221 20 21.5966 17.015 23.855 12.6079C23.9503 12.4194 24 12.2111 24 11.9998C24 11.7885 23.9503 11.5802 23.855 11.3917ZM12.0058 18H12C10.4097 17.9992 8.88485 17.3669 7.76077 16.2419C6.63669 15.117 6.00542 13.5917 6.00581 12.0015C6.0062 10.4112 6.6382 8.88618 7.76283 7.76182C8.88746 6.63747 10.4126 6.00583 12.0029 6.00583C13.5932 6.00583 15.1183 6.63747 16.243 7.76182C17.3676 8.88618 17.9996 10.4112 18 12.0015C18.0004 13.5917 17.3691 15.117 16.245 16.2419C15.1209 17.3669 13.5961 17.9992 12.0058 18Z" fill="#3366FF"/>
+                  <path d="M15.8608 13.0363C15.7247 13.5433 15.4899 14.0186 15.1698 14.4347C14.8497 14.8509 14.4506 15.1998 13.9955 15.4614C13.5403 15.7231 13.038 15.8924 12.5173 15.9596C11.9966 16.0268 11.4677 15.9906 10.961 15.853C10.4544 15.7155 9.97979 15.4794 9.56452 15.1581C9.14926 14.8368 8.80147 14.4368 8.54107 13.9809C8.28068 13.525 8.11279 13.0222 8.04704 12.5013C7.98129 11.9805 8.01897 11.4517 8.15791 10.9454C8.54194 11.228 9.01453 11.3636 9.48997 11.3277C9.96541 11.2917 10.4122 11.0865 10.7494 10.7494C11.0865 10.4122 11.2917 9.96542 11.3276 9.48998C11.3636 9.01454 11.228 8.54195 10.9454 8.15792C11.6237 7.96431 12.3412 7.95486 13.0243 8.13054C13.7075 8.30621 14.3314 8.66067 14.8321 9.15747C15.3328 9.65426 15.6922 10.2755 15.8732 10.9572C16.0542 11.6389 16.0504 12.3565 15.8621 13.0363H15.8608Z" fill="#3366FF"/>
+                </svg>
               </a>
             </li>
           </ul>
+          
+          <ul class="table-card">
+            <li class="card-info sponsor-id">2</li>
+            <li class="card-info sponsor-name">Saimov Rustam Saimjonovich</li>
+            <li >
+              <a class="card-info sponsor-phone phone-num" href="tel:+998999737260">+99899 973-72-60</a>
+            </li>
+            <li class="card-info sponsor-money">30 000 000 <span class="currency">UZS</span></li>
+            <li class="card-info sponsor-usage">0 <span class="currency">UZS</span></li>
+            <li class="card-info sponsor-data phone-num">02.02.2021</li>
+            <li class="card-info sponsor-status moderation">Moderatsiyada</li>
+            <li>
+              <a href="../homiy/homiy.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path opacity="0.4" d="M23.855 11.3917C21.5954 6.98292 17.1221 4 12 4C6.87789 4 2.40331 6.985 0.144977 11.3921C0.0496613 11.5806 0 11.7889 0 12.0002C0 12.2115 0.0496613 12.4198 0.144977 12.6083C2.40456 17.0171 6.87789 20 12 20C17.1221 20 21.5966 17.015 23.855 12.6079C23.9503 12.4194 24 12.2111 24 11.9998C24 11.7885 23.9503 11.5802 23.855 11.3917ZM12.0058 18H12C10.4097 17.9992 8.88485 17.3669 7.76077 16.2419C6.63669 15.117 6.00542 13.5917 6.00581 12.0015C6.0062 10.4112 6.6382 8.88618 7.76283 7.76182C8.88746 6.63747 10.4126 6.00583 12.0029 6.00583C13.5932 6.00583 15.1183 6.63747 16.243 7.76182C17.3676 8.88618 17.9996 10.4112 18 12.0015C18.0004 13.5917 17.3691 15.117 16.245 16.2419C15.1209 17.3669 13.5961 17.9992 12.0058 18Z" fill="#3366FF"/>
+                  <path d="M15.8608 13.0363C15.7247 13.5433 15.4899 14.0186 15.1698 14.4347C14.8497 14.8509 14.4506 15.1998 13.9955 15.4614C13.5403 15.7231 13.038 15.8924 12.5173 15.9596C11.9966 16.0268 11.4677 15.9906 10.961 15.853C10.4544 15.7155 9.97979 15.4794 9.56452 15.1581C9.14926 14.8368 8.80147 14.4368 8.54107 13.9809C8.28068 13.525 8.11279 13.0222 8.04704 12.5013C7.98129 11.9805 8.01897 11.4517 8.15791 10.9454C8.54194 11.228 9.01453 11.3636 9.48997 11.3277C9.96541 11.2917 10.4122 11.0865 10.7494 10.7494C11.0865 10.4122 11.2917 9.96542 11.3276 9.48998C11.3636 9.01454 11.228 8.54195 10.9454 8.15792C11.6237 7.96431 12.3412 7.95486 13.0243 8.13054C13.7075 8.30621 14.3314 8.66067 14.8321 9.15747C15.3328 9.65426 15.6922 10.2755 15.8732 10.9572C16.0542 11.6389 16.0504 12.3565 15.8621 13.0363H15.8608Z" fill="#3366FF"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          
+          <ul class="table-card">
+            <li class="card-info sponsor-id">3</li>
+            <li class="card-info sponsor-name">Sanginov Otabek Muratovich</li>
+            <li >
+              <a class="card-info sponsor-phone phone-num" href="tel:+998999737260">+99899 973-72-60</a>
+            </li>
+            <li class="card-info sponsor-money">5 000 000 <span class="currency">UZS</span></li>
+            <li class="card-info sponsor-usage">5 000 000 <span class="currency">UZS</span></li>
+            <li class="card-info sponsor-data phone-num">20.04.2021</li>
+            <li class="card-info sponsor-status checked">Tasdiqlangan</li>
+            <li>
+              <a href="../homiy/homiy.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path opacity="0.4" d="M23.855 11.3917C21.5954 6.98292 17.1221 4 12 4C6.87789 4 2.40331 6.985 0.144977 11.3921C0.0496613 11.5806 0 11.7889 0 12.0002C0 12.2115 0.0496613 12.4198 0.144977 12.6083C2.40456 17.0171 6.87789 20 12 20C17.1221 20 21.5966 17.015 23.855 12.6079C23.9503 12.4194 24 12.2111 24 11.9998C24 11.7885 23.9503 11.5802 23.855 11.3917ZM12.0058 18H12C10.4097 17.9992 8.88485 17.3669 7.76077 16.2419C6.63669 15.117 6.00542 13.5917 6.00581 12.0015C6.0062 10.4112 6.6382 8.88618 7.76283 7.76182C8.88746 6.63747 10.4126 6.00583 12.0029 6.00583C13.5932 6.00583 15.1183 6.63747 16.243 7.76182C17.3676 8.88618 17.9996 10.4112 18 12.0015C18.0004 13.5917 17.3691 15.117 16.245 16.2419C15.1209 17.3669 13.5961 17.9992 12.0058 18Z" fill="#3366FF"/>
+                  <path d="M15.8608 13.0363C15.7247 13.5433 15.4899 14.0186 15.1698 14.4347C14.8497 14.8509 14.4506 15.1998 13.9955 15.4614C13.5403 15.7231 13.038 15.8924 12.5173 15.9596C11.9966 16.0268 11.4677 15.9906 10.961 15.853C10.4544 15.7155 9.97979 15.4794 9.56452 15.1581C9.14926 14.8368 8.80147 14.4368 8.54107 13.9809C8.28068 13.525 8.11279 13.0222 8.04704 12.5013C7.98129 11.9805 8.01897 11.4517 8.15791 10.9454C8.54194 11.228 9.01453 11.3636 9.48997 11.3277C9.96541 11.2917 10.4122 11.0865 10.7494 10.7494C11.0865 10.4122 11.2917 9.96542 11.3276 9.48998C11.3636 9.01454 11.228 8.54195 10.9454 8.15792C11.6237 7.96431 12.3412 7.95486 13.0243 8.13054C13.7075 8.30621 14.3314 8.66067 14.8321 9.15747C15.3328 9.65426 15.6922 10.2755 15.8732 10.9572C16.0542 11.6389 16.0504 12.3565 15.8621 13.0363H15.8608Z" fill="#3366FF"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          
+          <ul class="table-card">
+            <li class="card-info sponsor-id">4</li>
+            <li class="card-info sponsor-name">Nazarov Sanjar Olimovich</li>
+            <li >
+              <a class="card-info sponsor-phone phone-num" href="tel:+998999737260">+99899 973-72-60</a>
+            </li>
+            <li class="card-info sponsor-money">7 000 000 <span class="currency">UZS</span></li>
+            <li class="card-info sponsor-usage">7 000 000 <span class="currency">UZS</span></li>
+            <li class="card-info sponsor-data phone-num">20.04.2021</li>
+            <li class="card-info sponsor-status deleted">Bekor qilingan</li>
+            <li>
+              <a href="../homiy/homiy.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path opacity="0.4" d="M23.855 11.3917C21.5954 6.98292 17.1221 4 12 4C6.87789 4 2.40331 6.985 0.144977 11.3921C0.0496613 11.5806 0 11.7889 0 12.0002C0 12.2115 0.0496613 12.4198 0.144977 12.6083C2.40456 17.0171 6.87789 20 12 20C17.1221 20 21.5966 17.015 23.855 12.6079C23.9503 12.4194 24 12.2111 24 11.9998C24 11.7885 23.9503 11.5802 23.855 11.3917ZM12.0058 18H12C10.4097 17.9992 8.88485 17.3669 7.76077 16.2419C6.63669 15.117 6.00542 13.5917 6.00581 12.0015C6.0062 10.4112 6.6382 8.88618 7.76283 7.76182C8.88746 6.63747 10.4126 6.00583 12.0029 6.00583C13.5932 6.00583 15.1183 6.63747 16.243 7.76182C17.3676 8.88618 17.9996 10.4112 18 12.0015C18.0004 13.5917 17.3691 15.117 16.245 16.2419C15.1209 17.3669 13.5961 17.9992 12.0058 18Z" fill="#3366FF"/>
+                  <path d="M15.8608 13.0363C15.7247 13.5433 15.4899 14.0186 15.1698 14.4347C14.8497 14.8509 14.4506 15.1998 13.9955 15.4614C13.5403 15.7231 13.038 15.8924 12.5173 15.9596C11.9966 16.0268 11.4677 15.9906 10.961 15.853C10.4544 15.7155 9.97979 15.4794 9.56452 15.1581C9.14926 14.8368 8.80147 14.4368 8.54107 13.9809C8.28068 13.525 8.11279 13.0222 8.04704 12.5013C7.98129 11.9805 8.01897 11.4517 8.15791 10.9454C8.54194 11.228 9.01453 11.3636 9.48997 11.3277C9.96541 11.2917 10.4122 11.0865 10.7494 10.7494C11.0865 10.4122 11.2917 9.96542 11.3276 9.48998C11.3636 9.01454 11.228 8.54195 10.9454 8.15792C11.6237 7.96431 12.3412 7.95486 13.0243 8.13054C13.7075 8.30621 14.3314 8.66067 14.8321 9.15747C15.3328 9.65426 15.6922 10.2755 15.8732 10.9572C16.0542 11.6389 16.0504 12.3565 15.8621 13.0363H15.8608Z" fill="#3366FF"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          
+          <ul class="table-card">
+            <li class="card-info sponsor-id">5</li>
+            <li class="card-info sponsor-name">Ibragimov Sohib Mirfayozovich</li>
+            <li >
+              <a class="card-info sponsor-phone phone-num" href="tel:+998999737260">+99899 973-72-60</a>
+            </li>
+            <li class="card-info sponsor-money">5 000 000 <span class="currency">UZS</span></li>
+            <li class="card-info sponsor-usage">5 000 000 <span class="currency">UZS</span></li>
+            <li class="card-info sponsor-data phone-num">20.04.2021</li>
+            <li class="card-info sponsor-status checked">Tasdiqlangan</li>
+            <li>
+              <a href="../homiy/homiy.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path opacity="0.4" d="M23.855 11.3917C21.5954 6.98292 17.1221 4 12 4C6.87789 4 2.40331 6.985 0.144977 11.3921C0.0496613 11.5806 0 11.7889 0 12.0002C0 12.2115 0.0496613 12.4198 0.144977 12.6083C2.40456 17.0171 6.87789 20 12 20C17.1221 20 21.5966 17.015 23.855 12.6079C23.9503 12.4194 24 12.2111 24 11.9998C24 11.7885 23.9503 11.5802 23.855 11.3917ZM12.0058 18H12C10.4097 17.9992 8.88485 17.3669 7.76077 16.2419C6.63669 15.117 6.00542 13.5917 6.00581 12.0015C6.0062 10.4112 6.6382 8.88618 7.76283 7.76182C8.88746 6.63747 10.4126 6.00583 12.0029 6.00583C13.5932 6.00583 15.1183 6.63747 16.243 7.76182C17.3676 8.88618 17.9996 10.4112 18 12.0015C18.0004 13.5917 17.3691 15.117 16.245 16.2419C15.1209 17.3669 13.5961 17.9992 12.0058 18Z" fill="#3366FF"/>
+                  <path d="M15.8608 13.0363C15.7247 13.5433 15.4899 14.0186 15.1698 14.4347C14.8497 14.8509 14.4506 15.1998 13.9955 15.4614C13.5403 15.7231 13.038 15.8924 12.5173 15.9596C11.9966 16.0268 11.4677 15.9906 10.961 15.853C10.4544 15.7155 9.97979 15.4794 9.56452 15.1581C9.14926 14.8368 8.80147 14.4368 8.54107 13.9809C8.28068 13.525 8.11279 13.0222 8.04704 12.5013C7.98129 11.9805 8.01897 11.4517 8.15791 10.9454C8.54194 11.228 9.01453 11.3636 9.48997 11.3277C9.96541 11.2917 10.4122 11.0865 10.7494 10.7494C11.0865 10.4122 11.2917 9.96542 11.3276 9.48998C11.3636 9.01454 11.228 8.54195 10.9454 8.15792C11.6237 7.96431 12.3412 7.95486 13.0243 8.13054C13.7075 8.30621 14.3314 8.66067 14.8321 9.15747C15.3328 9.65426 15.6922 10.2755 15.8732 10.9572C16.0542 11.6389 16.0504 12.3565 15.8621 13.0363H15.8608Z" fill="#3366FF"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          
+          <ul class="table-card">
+            <li class="card-info sponsor-id">6</li>
+            <li class="card-info sponsor-name">Sanginov Otabek Muratovich</li>
+            <li >
+              <a class="card-info sponsor-phone phone-num" href="tel:+998999737260">+99899 973-72-60</a>
+            </li>
+            <li class="card-info sponsor-money">5 000 000 <span class="currency">UZS</span></li>
+            <li class="card-info sponsor-usage">5 000 000 <span class="currency">UZS</span></li>
+            <li class="card-info sponsor-data phone-num">20.04.2021</li>
+            <li class="card-info sponsor-status moderation">Moderatsiyada</li>
+            <li>
+              <a href="../homiy/homiy.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path opacity="0.4" d="M23.855 11.3917C21.5954 6.98292 17.1221 4 12 4C6.87789 4 2.40331 6.985 0.144977 11.3921C0.0496613 11.5806 0 11.7889 0 12.0002C0 12.2115 0.0496613 12.4198 0.144977 12.6083C2.40456 17.0171 6.87789 20 12 20C17.1221 20 21.5966 17.015 23.855 12.6079C23.9503 12.4194 24 12.2111 24 11.9998C24 11.7885 23.9503 11.5802 23.855 11.3917ZM12.0058 18H12C10.4097 17.9992 8.88485 17.3669 7.76077 16.2419C6.63669 15.117 6.00542 13.5917 6.00581 12.0015C6.0062 10.4112 6.6382 8.88618 7.76283 7.76182C8.88746 6.63747 10.4126 6.00583 12.0029 6.00583C13.5932 6.00583 15.1183 6.63747 16.243 7.76182C17.3676 8.88618 17.9996 10.4112 18 12.0015C18.0004 13.5917 17.3691 15.117 16.245 16.2419C15.1209 17.3669 13.5961 17.9992 12.0058 18Z" fill="#3366FF"/>
+                  <path d="M15.8608 13.0363C15.7247 13.5433 15.4899 14.0186 15.1698 14.4347C14.8497 14.8509 14.4506 15.1998 13.9955 15.4614C13.5403 15.7231 13.038 15.8924 12.5173 15.9596C11.9966 16.0268 11.4677 15.9906 10.961 15.853C10.4544 15.7155 9.97979 15.4794 9.56452 15.1581C9.14926 14.8368 8.80147 14.4368 8.54107 13.9809C8.28068 13.525 8.11279 13.0222 8.04704 12.5013C7.98129 11.9805 8.01897 11.4517 8.15791 10.9454C8.54194 11.228 9.01453 11.3636 9.48997 11.3277C9.96541 11.2917 10.4122 11.0865 10.7494 10.7494C11.0865 10.4122 11.2917 9.96542 11.3276 9.48998C11.3636 9.01454 11.228 8.54195 10.9454 8.15792C11.6237 7.96431 12.3412 7.95486 13.0243 8.13054C13.7075 8.30621 14.3314 8.66067 14.8321 9.15747C15.3328 9.65426 15.6922 10.2755 15.8732 10.9572C16.0542 11.6389 16.0504 12.3565 15.8621 13.0363H15.8608Z" fill="#3366FF"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          
+          <ul class="table-card">
+            <li class="card-info sponsor-id">7</li>
+            <li class="card-info sponsor-name">Sanginov Otabek Muratovich</li>
+            <li >
+              <a class="card-info sponsor-phone phone-num" href="tel:+998999737260">+99899 973-72-60</a>
+            </li>
+            <li class="card-info sponsor-money">5 000 000 <span class="currency">UZS</span></li>
+            <li class="card-info sponsor-usage">5 000 000 <span class="currency">UZS</span></li>
+            <li class="card-info sponsor-data phone-num">20.04.2021</li>
+            <li class="card-info sponsor-status new">Yangi</li>
+            <li>
+              <a href="../homiy/homiy.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path opacity="0.4" d="M23.855 11.3917C21.5954 6.98292 17.1221 4 12 4C6.87789 4 2.40331 6.985 0.144977 11.3921C0.0496613 11.5806 0 11.7889 0 12.0002C0 12.2115 0.0496613 12.4198 0.144977 12.6083C2.40456 17.0171 6.87789 20 12 20C17.1221 20 21.5966 17.015 23.855 12.6079C23.9503 12.4194 24 12.2111 24 11.9998C24 11.7885 23.9503 11.5802 23.855 11.3917ZM12.0058 18H12C10.4097 17.9992 8.88485 17.3669 7.76077 16.2419C6.63669 15.117 6.00542 13.5917 6.00581 12.0015C6.0062 10.4112 6.6382 8.88618 7.76283 7.76182C8.88746 6.63747 10.4126 6.00583 12.0029 6.00583C13.5932 6.00583 15.1183 6.63747 16.243 7.76182C17.3676 8.88618 17.9996 10.4112 18 12.0015C18.0004 13.5917 17.3691 15.117 16.245 16.2419C15.1209 17.3669 13.5961 17.9992 12.0058 18Z" fill="#3366FF"/>
+                  <path d="M15.8608 13.0363C15.7247 13.5433 15.4899 14.0186 15.1698 14.4347C14.8497 14.8509 14.4506 15.1998 13.9955 15.4614C13.5403 15.7231 13.038 15.8924 12.5173 15.9596C11.9966 16.0268 11.4677 15.9906 10.961 15.853C10.4544 15.7155 9.97979 15.4794 9.56452 15.1581C9.14926 14.8368 8.80147 14.4368 8.54107 13.9809C8.28068 13.525 8.11279 13.0222 8.04704 12.5013C7.98129 11.9805 8.01897 11.4517 8.15791 10.9454C8.54194 11.228 9.01453 11.3636 9.48997 11.3277C9.96541 11.2917 10.4122 11.0865 10.7494 10.7494C11.0865 10.4122 11.2917 9.96542 11.3276 9.48998C11.3636 9.01454 11.228 8.54195 10.9454 8.15792C11.6237 7.96431 12.3412 7.95486 13.0243 8.13054C13.7075 8.30621 14.3314 8.66067 14.8321 9.15747C15.3328 9.65426 15.6922 10.2755 15.8732 10.9572C16.0542 11.6389 16.0504 12.3565 15.8621 13.0363H15.8608Z" fill="#3366FF"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          
+          <ul class="table-card">
+            <li class="card-info sponsor-id">8</li>
+            <li class="card-info sponsor-name">Sanginov Otabek Muratovich</li>
+            <li >
+              <a class="card-info sponsor-phone phone-num" href="tel:+998999737260">+99899 973-72-60</a>
+            </li>
+            <li class="card-info sponsor-money">5 000 000 <span class="currency">UZS</span></li>
+            <li class="card-info sponsor-usage">5 000 000 <span class="currency">UZS</span></li>
+            <li class="card-info sponsor-data phone-num">20.04.2021</li>
+            <li class="card-info sponsor-status checked">Tasdiqlangan</li>
+            <li>
+              <a href="../homiy/homiy.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path opacity="0.4" d="M23.855 11.3917C21.5954 6.98292 17.1221 4 12 4C6.87789 4 2.40331 6.985 0.144977 11.3921C0.0496613 11.5806 0 11.7889 0 12.0002C0 12.2115 0.0496613 12.4198 0.144977 12.6083C2.40456 17.0171 6.87789 20 12 20C17.1221 20 21.5966 17.015 23.855 12.6079C23.9503 12.4194 24 12.2111 24 11.9998C24 11.7885 23.9503 11.5802 23.855 11.3917ZM12.0058 18H12C10.4097 17.9992 8.88485 17.3669 7.76077 16.2419C6.63669 15.117 6.00542 13.5917 6.00581 12.0015C6.0062 10.4112 6.6382 8.88618 7.76283 7.76182C8.88746 6.63747 10.4126 6.00583 12.0029 6.00583C13.5932 6.00583 15.1183 6.63747 16.243 7.76182C17.3676 8.88618 17.9996 10.4112 18 12.0015C18.0004 13.5917 17.3691 15.117 16.245 16.2419C15.1209 17.3669 13.5961 17.9992 12.0058 18Z" fill="#3366FF"/>
+                  <path d="M15.8608 13.0363C15.7247 13.5433 15.4899 14.0186 15.1698 14.4347C14.8497 14.8509 14.4506 15.1998 13.9955 15.4614C13.5403 15.7231 13.038 15.8924 12.5173 15.9596C11.9966 16.0268 11.4677 15.9906 10.961 15.853C10.4544 15.7155 9.97979 15.4794 9.56452 15.1581C9.14926 14.8368 8.80147 14.4368 8.54107 13.9809C8.28068 13.525 8.11279 13.0222 8.04704 12.5013C7.98129 11.9805 8.01897 11.4517 8.15791 10.9454C8.54194 11.228 9.01453 11.3636 9.48997 11.3277C9.96541 11.2917 10.4122 11.0865 10.7494 10.7494C11.0865 10.4122 11.2917 9.96542 11.3276 9.48998C11.3636 9.01454 11.228 8.54195 10.9454 8.15792C11.6237 7.96431 12.3412 7.95486 13.0243 8.13054C13.7075 8.30621 14.3314 8.66067 14.8321 9.15747C15.3328 9.65426 15.6922 10.2755 15.8732 10.9572C16.0542 11.6389 16.0504 12.3565 15.8621 13.0363H15.8608Z" fill="#3366FF"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          
+          <ul class="table-card">
+            <li class="card-info sponsor-id">9</li>
+            <li class="card-info sponsor-name">Sanginov Otabek Muratovich</li>
+            <li >
+              <a class="card-info sponsor-phone phone-num" href="tel:+998999737260">+99899 973-72-60</a>
+            </li>
+            <li class="card-info sponsor-money">5 000 000 <span class="currency">UZS</span></li>
+            <li class="card-info sponsor-usage">5 000 000 <span class="currency">UZS</span></li>
+            <li class="card-info sponsor-data phone-num">20.04.2021</li>
+            <li class="card-info sponsor-status deleted">Bekor qilingan</li>
+            <li>
+              <a href="../homiy/homiy.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path opacity="0.4" d="M23.855 11.3917C21.5954 6.98292 17.1221 4 12 4C6.87789 4 2.40331 6.985 0.144977 11.3921C0.0496613 11.5806 0 11.7889 0 12.0002C0 12.2115 0.0496613 12.4198 0.144977 12.6083C2.40456 17.0171 6.87789 20 12 20C17.1221 20 21.5966 17.015 23.855 12.6079C23.9503 12.4194 24 12.2111 24 11.9998C24 11.7885 23.9503 11.5802 23.855 11.3917ZM12.0058 18H12C10.4097 17.9992 8.88485 17.3669 7.76077 16.2419C6.63669 15.117 6.00542 13.5917 6.00581 12.0015C6.0062 10.4112 6.6382 8.88618 7.76283 7.76182C8.88746 6.63747 10.4126 6.00583 12.0029 6.00583C13.5932 6.00583 15.1183 6.63747 16.243 7.76182C17.3676 8.88618 17.9996 10.4112 18 12.0015C18.0004 13.5917 17.3691 15.117 16.245 16.2419C15.1209 17.3669 13.5961 17.9992 12.0058 18Z" fill="#3366FF"/>
+                  <path d="M15.8608 13.0363C15.7247 13.5433 15.4899 14.0186 15.1698 14.4347C14.8497 14.8509 14.4506 15.1998 13.9955 15.4614C13.5403 15.7231 13.038 15.8924 12.5173 15.9596C11.9966 16.0268 11.4677 15.9906 10.961 15.853C10.4544 15.7155 9.97979 15.4794 9.56452 15.1581C9.14926 14.8368 8.80147 14.4368 8.54107 13.9809C8.28068 13.525 8.11279 13.0222 8.04704 12.5013C7.98129 11.9805 8.01897 11.4517 8.15791 10.9454C8.54194 11.228 9.01453 11.3636 9.48997 11.3277C9.96541 11.2917 10.4122 11.0865 10.7494 10.7494C11.0865 10.4122 11.2917 9.96542 11.3276 9.48998C11.3636 9.01454 11.228 8.54195 10.9454 8.15792C11.6237 7.96431 12.3412 7.95486 13.0243 8.13054C13.7075 8.30621 14.3314 8.66067 14.8321 9.15747C15.3328 9.65426 15.6922 10.2755 15.8732 10.9572C16.0542 11.6389 16.0504 12.3565 15.8621 13.0363H15.8608Z" fill="#3366FF"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          
+          <ul class="table-card">
+            <li class="card-info sponsor-id">10</li>
+            <li class="card-info sponsor-name">Sanginov Otabek Muratovich</li>
+            <li >
+              <a class="card-info sponsor-phone phone-num" href="tel:+998999737260">+99899 973-72-60</a>
+            </li>
+            <li class="card-info sponsor-money">5 000 000 <span class="currency">UZS</span></li>
+            <li class="card-info sponsor-usage">5 000 000 <span class="currency">UZS</span></li>
+            <li class="card-info sponsor-data phone-num">20.04.2021</li>
+            <li class="card-info sponsor-status checked">Tasdiqlangan</li>
+            <li>
+              <a href="../homiy/homiy.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path opacity="0.4" d="M23.855 11.3917C21.5954 6.98292 17.1221 4 12 4C6.87789 4 2.40331 6.985 0.144977 11.3921C0.0496613 11.5806 0 11.7889 0 12.0002C0 12.2115 0.0496613 12.4198 0.144977 12.6083C2.40456 17.0171 6.87789 20 12 20C17.1221 20 21.5966 17.015 23.855 12.6079C23.9503 12.4194 24 12.2111 24 11.9998C24 11.7885 23.9503 11.5802 23.855 11.3917ZM12.0058 18H12C10.4097 17.9992 8.88485 17.3669 7.76077 16.2419C6.63669 15.117 6.00542 13.5917 6.00581 12.0015C6.0062 10.4112 6.6382 8.88618 7.76283 7.76182C8.88746 6.63747 10.4126 6.00583 12.0029 6.00583C13.5932 6.00583 15.1183 6.63747 16.243 7.76182C17.3676 8.88618 17.9996 10.4112 18 12.0015C18.0004 13.5917 17.3691 15.117 16.245 16.2419C15.1209 17.3669 13.5961 17.9992 12.0058 18Z" fill="#3366FF"/>
+                  <path d="M15.8608 13.0363C15.7247 13.5433 15.4899 14.0186 15.1698 14.4347C14.8497 14.8509 14.4506 15.1998 13.9955 15.4614C13.5403 15.7231 13.038 15.8924 12.5173 15.9596C11.9966 16.0268 11.4677 15.9906 10.961 15.853C10.4544 15.7155 9.97979 15.4794 9.56452 15.1581C9.14926 14.8368 8.80147 14.4368 8.54107 13.9809C8.28068 13.525 8.11279 13.0222 8.04704 12.5013C7.98129 11.9805 8.01897 11.4517 8.15791 10.9454C8.54194 11.228 9.01453 11.3636 9.48997 11.3277C9.96541 11.2917 10.4122 11.0865 10.7494 10.7494C11.0865 10.4122 11.2917 9.96542 11.3276 9.48998C11.3636 9.01454 11.228 8.54195 10.9454 8.15792C11.6237 7.96431 12.3412 7.95486 13.0243 8.13054C13.7075 8.30621 14.3314 8.66067 14.8321 9.15747C15.3328 9.65426 15.6922 10.2755 15.8732 10.9572C16.0542 11.6389 16.0504 12.3565 15.8621 13.0363H15.8608Z" fill="#3366FF"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          
+          <ul class="table-card">
+            <li class="card-info sponsor-id">11</li>
+            <li class="card-info sponsor-name">Sanginov Otabek Muratovich</li>
+            <li >
+              <a class="card-info sponsor-phone phone-num" href="tel:+998999737260">+99899 973-72-60</a>
+            </li>
+            <li class="card-info sponsor-money">5 000 000 <span class="currency">UZS</span></li>
+            <li class="card-info sponsor-usage">5 000 000 <span class="currency">UZS</span></li>
+            <li class="card-info sponsor-data phone-num">20.04.2021</li>
+            <li class="card-info sponsor-status checked">Tasdiqlangan</li>
+            <li>
+              <a href="../homiy/homiy.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path opacity="0.4" d="M23.855 11.3917C21.5954 6.98292 17.1221 4 12 4C6.87789 4 2.40331 6.985 0.144977 11.3921C0.0496613 11.5806 0 11.7889 0 12.0002C0 12.2115 0.0496613 12.4198 0.144977 12.6083C2.40456 17.0171 6.87789 20 12 20C17.1221 20 21.5966 17.015 23.855 12.6079C23.9503 12.4194 24 12.2111 24 11.9998C24 11.7885 23.9503 11.5802 23.855 11.3917ZM12.0058 18H12C10.4097 17.9992 8.88485 17.3669 7.76077 16.2419C6.63669 15.117 6.00542 13.5917 6.00581 12.0015C6.0062 10.4112 6.6382 8.88618 7.76283 7.76182C8.88746 6.63747 10.4126 6.00583 12.0029 6.00583C13.5932 6.00583 15.1183 6.63747 16.243 7.76182C17.3676 8.88618 17.9996 10.4112 18 12.0015C18.0004 13.5917 17.3691 15.117 16.245 16.2419C15.1209 17.3669 13.5961 17.9992 12.0058 18Z" fill="#3366FF"/>
+                  <path d="M15.8608 13.0363C15.7247 13.5433 15.4899 14.0186 15.1698 14.4347C14.8497 14.8509 14.4506 15.1998 13.9955 15.4614C13.5403 15.7231 13.038 15.8924 12.5173 15.9596C11.9966 16.0268 11.4677 15.9906 10.961 15.853C10.4544 15.7155 9.97979 15.4794 9.56452 15.1581C9.14926 14.8368 8.80147 14.4368 8.54107 13.9809C8.28068 13.525 8.11279 13.0222 8.04704 12.5013C7.98129 11.9805 8.01897 11.4517 8.15791 10.9454C8.54194 11.228 9.01453 11.3636 9.48997 11.3277C9.96541 11.2917 10.4122 11.0865 10.7494 10.7494C11.0865 10.4122 11.2917 9.96542 11.3276 9.48998C11.3636 9.01454 11.228 8.54195 10.9454 8.15792C11.6237 7.96431 12.3412 7.95486 13.0243 8.13054C13.7075 8.30621 14.3314 8.66067 14.8321 9.15747C15.3328 9.65426 15.6922 10.2755 15.8732 10.9572C16.0542 11.6389 16.0504 12.3565 15.8621 13.0363H15.8608Z" fill="#3366FF"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          
+          <ul class="table-card">
+            <li class="card-info sponsor-id">12</li>
+            <li class="card-info sponsor-name">Ibragimov Sohib Mirfayozovich</li>
+            <li >
+              <a class="card-info sponsor-phone phone-num" href="tel:+998999737260">+99899 973-72-60</a>
+            </li>
+            <li class="card-info sponsor-money">10 000 000 <span class="currency">UZS</span></li>
+            <li class="card-info sponsor-usage">0 <span class="currency">UZS</span></li>
+            <li class="card-info sponsor-data phone-num">20.04.2021</li>
+            <li class="card-info sponsor-status new">yangi</li>
+            <li>
+              <a href="../homiy/homiy.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path opacity="0.4" d="M23.855 11.3917C21.5954 6.98292 17.1221 4 12 4C6.87789 4 2.40331 6.985 0.144977 11.3921C0.0496613 11.5806 0 11.7889 0 12.0002C0 12.2115 0.0496613 12.4198 0.144977 12.6083C2.40456 17.0171 6.87789 20 12 20C17.1221 20 21.5966 17.015 23.855 12.6079C23.9503 12.4194 24 12.2111 24 11.9998C24 11.7885 23.9503 11.5802 23.855 11.3917ZM12.0058 18H12C10.4097 17.9992 8.88485 17.3669 7.76077 16.2419C6.63669 15.117 6.00542 13.5917 6.00581 12.0015C6.0062 10.4112 6.6382 8.88618 7.76283 7.76182C8.88746 6.63747 10.4126 6.00583 12.0029 6.00583C13.5932 6.00583 15.1183 6.63747 16.243 7.76182C17.3676 8.88618 17.9996 10.4112 18 12.0015C18.0004 13.5917 17.3691 15.117 16.245 16.2419C15.1209 17.3669 13.5961 17.9992 12.0058 18Z" fill="#3366FF"/>
+                  <path d="M15.8608 13.0363C15.7247 13.5433 15.4899 14.0186 15.1698 14.4347C14.8497 14.8509 14.4506 15.1998 13.9955 15.4614C13.5403 15.7231 13.038 15.8924 12.5173 15.9596C11.9966 16.0268 11.4677 15.9906 10.961 15.853C10.4544 15.7155 9.97979 15.4794 9.56452 15.1581C9.14926 14.8368 8.80147 14.4368 8.54107 13.9809C8.28068 13.525 8.11279 13.0222 8.04704 12.5013C7.98129 11.9805 8.01897 11.4517 8.15791 10.9454C8.54194 11.228 9.01453 11.3636 9.48997 11.3277C9.96541 11.2917 10.4122 11.0865 10.7494 10.7494C11.0865 10.4122 11.2917 9.96542 11.3276 9.48998C11.3636 9.01454 11.228 8.54195 10.9454 8.15792C11.6237 7.96431 12.3412 7.95486 13.0243 8.13054C13.7075 8.30621 14.3314 8.66067 14.8321 9.15747C15.3328 9.65426 15.6922 10.2755 15.8732 10.9572C16.0542 11.6389 16.0504 12.3565 15.8621 13.0363H15.8608Z" fill="#3366FF"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          
+          <ul class="table-card">
+            <li class="card-info sponsor-id">13</li>
+            <li class="card-info sponsor-name">Sanginov Otabek Muratovich</li>
+            <li >
+              <a class="card-info sponsor-phone phone-num" href="tel:+998999737260">+99899 973-72-60</a>
+            </li>
+            <li class="card-info sponsor-money">5 000 000 <span class="currency">UZS</span></li>
+            <li class="card-info sponsor-usage">5 000 000 <span class="currency">UZS</span></li>
+            <li class="card-info sponsor-data phone-num">20.04.2021</li>
+            <li class="card-info sponsor-status moderation">Modernizatsiyada</li>
+            <li>
+              <a href="../homiy/homiy.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path opacity="0.4" d="M23.855 11.3917C21.5954 6.98292 17.1221 4 12 4C6.87789 4 2.40331 6.985 0.144977 11.3921C0.0496613 11.5806 0 11.7889 0 12.0002C0 12.2115 0.0496613 12.4198 0.144977 12.6083C2.40456 17.0171 6.87789 20 12 20C17.1221 20 21.5966 17.015 23.855 12.6079C23.9503 12.4194 24 12.2111 24 11.9998C24 11.7885 23.9503 11.5802 23.855 11.3917ZM12.0058 18H12C10.4097 17.9992 8.88485 17.3669 7.76077 16.2419C6.63669 15.117 6.00542 13.5917 6.00581 12.0015C6.0062 10.4112 6.6382 8.88618 7.76283 7.76182C8.88746 6.63747 10.4126 6.00583 12.0029 6.00583C13.5932 6.00583 15.1183 6.63747 16.243 7.76182C17.3676 8.88618 17.9996 10.4112 18 12.0015C18.0004 13.5917 17.3691 15.117 16.245 16.2419C15.1209 17.3669 13.5961 17.9992 12.0058 18Z" fill="#3366FF"/>
+                  <path d="M15.8608 13.0363C15.7247 13.5433 15.4899 14.0186 15.1698 14.4347C14.8497 14.8509 14.4506 15.1998 13.9955 15.4614C13.5403 15.7231 13.038 15.8924 12.5173 15.9596C11.9966 16.0268 11.4677 15.9906 10.961 15.853C10.4544 15.7155 9.97979 15.4794 9.56452 15.1581C9.14926 14.8368 8.80147 14.4368 8.54107 13.9809C8.28068 13.525 8.11279 13.0222 8.04704 12.5013C7.98129 11.9805 8.01897 11.4517 8.15791 10.9454C8.54194 11.228 9.01453 11.3636 9.48997 11.3277C9.96541 11.2917 10.4122 11.0865 10.7494 10.7494C11.0865 10.4122 11.2917 9.96542 11.3276 9.48998C11.3636 9.01454 11.228 8.54195 10.9454 8.15792C11.6237 7.96431 12.3412 7.95486 13.0243 8.13054C13.7075 8.30621 14.3314 8.66067 14.8321 9.15747C15.3328 9.65426 15.6922 10.2755 15.8732 10.9572C16.0542 11.6389 16.0504 12.3565 15.8621 13.0363H15.8608Z" fill="#3366FF"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          
+        </li>
+
+      </ul>
+        
+    </div>
+    </section>
+  </main>
+  
+  <div class="modal">
+    <div class="student-filter hidden" id="filterStudentModal">
+      <div class="filter-header">
+        <h3 class="filter-title">Filter</h3>
+        <button class="btn-close" id="closeModalBtn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+            <path d="M21 7L7 21" stroke="#B2B7C1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M7 7L21 21" stroke="#B2B7C1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+      
+      <div class="filter-sponsor-body">
+        
+        <div class="form-group">
+          
+          <div class="dropdown">
+            <label style="margin-bottom: 6px;" >Ariza Holati</label>
+            <div class="menu">
+              <span class="menu-text">Barchasi</span>
+              <button class="btn-dropdown">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                  <path d="M15.8521 7.60181C16.2101 7.24383 16.7905 7.24383 17.1485 7.60181C17.5065 7.95979 17.5065 8.54019 17.1485 8.89817L11.6485 14.3982C11.3015 14.7452 10.7427 14.7573 10.3809 14.4257L4.88091 9.38405C4.50772 9.04195 4.48251 8.4621 4.8246 8.08891C5.16669 7.71572 5.74655 7.6905 6.11974 8.0326L10.9728 12.4812L15.8521 7.60181Z" fill="#B5B5C3"/>
+                </svg>
+              </button>
+            </div>
+            <ul class="options">
+              <li class="option">Barchasi</li>
+              <li class="option">Moderatsiyada</li>
+              <li class="option">Yangi</li>
+              <li class="option">Tasdiqlangan</li>
+              <li class="option">Bekor qilingan</li>
+            </ul>
+          </div>
+        </div> 
+        
+        <div class="form-group modal-date">
+          <label for="date">
+            <span>Sana</span>
+            <input 
+            id="date" 
+            name="date" 
+            type="date" 
+            class="form-input"
+            >
+          </label>
         </div>
-      </div>  
-    
-    <div class="overlay hidden" id="overlay"></div>
-    
-    <script src="../../components/tab/tab.js"></script>
-    <script src="./homiylar.js"></script>
-    <script src="./../../components/pagination/pagination.js"></script>
-    <script src="./../../components/header/header.js"></script>
-    <script src="./../../components/form/dropdown/dropdown.js"></script>
+      </div>
+      
+      <div class="filter-footer">
+        <button class="btn btn-secondary" id="clearBtnModal">
+          <svg class="btn-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M19.6454 10.0047C19.3874 9.88994 16.9725 8.8149 16.7137 8.70016C15.4993 8.15956 14.0769 8.70632 13.5371 9.91997L20.8652 13.1813C21.4058 11.9669 20.8591 10.5445 19.6454 10.0047ZM21.4166 2.07743C21.0116 1.89723 20.5811 1.94343 20.4494 2.19063L16.9408 8.8011L19.3081 9.85381L21.9803 2.87138C22.0758 2.60802 21.8217 2.25763 21.4166 2.07743Z" stroke="#3366FF" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M19.6772 14.2178C18.1732 18.7967 16.2264 21.167 16.2264 21.167C16.2264 21.167 9.52132 20.9237 5.17188 15.5546C6.06979 15.6186 11.6675 15.1373 13.5958 11.4185" stroke="#3366FF" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M7.77051 18.0255C7.77051 18.0255 9.89439 17.7455 11.0341 16.5549C10.1223 18.2268 9.03653 18.861 9.03653 18.861L7.77051 18.0255ZM10.7646 19.6996C10.7646 19.6996 12.4349 19.7184 15.2765 17.1009C14.2546 19.4312 12.922 20.5622 12.922 20.5622L10.7646 19.6996Z" stroke="#3366FF" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M3.20337 9.04437C3.27136 9.0162 3.34423 9.00171 3.41782 9.00171C3.49142 9.00171 3.56429 9.0162 3.63228 9.04437C3.70027 9.07253 3.76205 9.11381 3.81409 9.16585C3.86612 9.21788 3.9074 9.27966 3.93557 9.34765C3.96373 9.41564 3.97822 9.48852 3.97822 9.56211C3.97822 9.6357 3.96373 9.70858 3.93557 9.77657C3.9074 9.84456 3.86612 9.90634 3.81409 9.95837C3.76205 10.0104 3.70027 10.0517 3.63228 10.0799C3.56429 10.108 3.49142 10.1225 3.41782 10.1225C3.34423 10.1225 3.27136 10.108 3.20337 10.0799C3.13538 10.0517 3.0736 10.0104 3.02156 9.95837C2.96952 9.90634 2.92824 9.84456 2.90008 9.77657C2.87192 9.70858 2.85742 9.6357 2.85742 9.56211C2.85742 9.48852 2.87192 9.41564 2.90008 9.34765C2.92824 9.27966 2.96952 9.21788 3.02156 9.16585C3.0736 9.11381 3.13538 9.07253 3.20337 9.04437Z" fill="#3366FF"/>
+            <path d="M4.83485 9.48473C4.90491 9.41467 4.99994 9.37531 5.09903 9.37531C5.19811 9.37531 5.29314 9.41467 5.3632 9.48473C5.43327 9.5548 5.47263 9.64983 5.47263 9.74891C5.47263 9.848 5.43327 9.94302 5.3632 10.0131C5.29314 10.0831 5.19811 10.1225 5.09903 10.1225C4.99994 10.1225 4.90491 10.0831 4.83485 10.0131C4.76479 9.94302 4.72543 9.848 4.72543 9.74891C4.72543 9.64983 4.76479 9.5548 4.83485 9.48473Z" fill="#3366FF"/>
+            <path d="M4.25179 11.1433C4.42695 10.9681 4.66451 10.8697 4.91223 10.8697C5.15994 10.8697 5.39751 10.9681 5.57266 11.1433C5.74782 11.3184 5.84623 11.556 5.84623 11.8037C5.84623 12.0514 5.74782 12.289 5.57266 12.4642C5.39751 12.6393 5.15994 12.7377 4.91223 12.7377C4.66451 12.7377 4.42695 12.6393 4.25179 12.4642C4.07663 12.289 3.97822 12.0514 3.97822 11.8037C3.97822 11.556 4.07663 11.3184 4.25179 11.1433Z" fill="#3366FF"/>
+          </svg>
+          <span>Tozalash</span>
+        </button>
+        
+        <button class="btn btn-primary" id="showResult">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M2 12C2 12 5.63636 4.72729 12 4.72729C18.3636 4.72729 22 12 22 12C22 12 18.3636 19.2727 12 19.2727C5.63636 19.2727 2 12 2 12Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M11.9997 14.7273C13.506 14.7273 14.727 13.5063 14.727 12C14.727 10.4938 13.506 9.27277 11.9997 9.27277C10.4935 9.27277 9.27246 10.4938 9.27246 12C9.27246 13.5063 10.4935 14.7273 11.9997 14.7273Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>Natijalarni ko‘rish</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="pag-wrap" style="margin-top: 50px;">
+    <div class="container pag-inner">
+      <p class="pag-title">59 tadan 1-10 ko‘rsatilmoqda</p>
+      <ul class="pagination" id="pagination">
+        <li class="pagination-list">
+          <a href="#" id="prev">
+            <img src="./../../images/pag-icon-left.svg" alt="" />
+          </a>
+        </li>
+        <li><a href="#" class="page-link">1</a></li>
+        <li>
+          <a href="#" id="next">
+            <img src="./../../images/pag-icon-right.svg" alt="" />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>  
+  
+  <div class="overlay hidden" id="overlay"></div>
+  
+  <script src="../../components/tab/tab.js"></script>
+  <script src="./homiylar.js"></script>
+  <script src="./../../components/pagination/pagination.js"></script>
+  <script src="./../../components/header/header.js"></script>
+  <script src="./../../components/form/dropdown/dropdown.js"></script>
 </body>
 </html>

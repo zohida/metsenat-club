@@ -9,7 +9,7 @@ studentExitBtn.addEventListener('click', () => {
 });
 
 
-const form = document.getElementById('formStudent');
+const form = document.getElementById('form-student');
     const nameInput = document.getElementById('student-name');
     const telInput = document.getElementById('tel');
     const universityInput = document.getElementById('university');
@@ -77,7 +77,7 @@ const form = document.getElementById('formStudent');
     }
 
     function resetErrorMessages() {
-        document.querySelectorAll('.msg').forEach(function(msgElement) {
+        document.querySelectorAll('.error').forEach(function(msgElement) {
             msgElement.textContent = '';
         });
     }

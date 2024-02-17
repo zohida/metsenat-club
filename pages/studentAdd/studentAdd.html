@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Student Add page</title>
-    <link rel="stylesheet" href="../../components/form/input/input.css" />
     <link rel="stylesheet" href="./studentAdd.css" />
     <link rel="stylesheet" href="../../css/main.css" />
   </head>
   <body>
+
     <div class="site-header">
       <div class="container header-inner">
         <a href="#">
@@ -44,9 +44,8 @@
     </div>
 
     <div class="student-add-box">
-      <div class="container">
-        <div class="student-info-wrap">
-          <button class="btn btn-exit" id="studentExitBtn">
+      <div class="container student-info-wrap">
+          <button class=" btn-sign" id="studentExitBtn">
             <a href="#">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -73,7 +72,7 @@
             </a>
           </button>
           <p class="add-student-text">Talaba qo‘shish</p>
-        </div>
+      
       </div>
     </div>
 
@@ -81,12 +80,14 @@
       <section class="add-student">
         <div class="container">
           <div class="add-student-inner">
-            <form class="form-student" id="formStudent">
-              <div class="form-wrapper">
-                <label for="name">
-                  F.I.Sh. (Familiya Ism Sharif)
+            <form class="form-student" id="form-student"
+            style="display: flex; flex-direction: column; gap: 20px;">
+
+              <div class="form-group">
+                <label class="form-label" for="name">
+                  <span>F.I.Sh. (Familiya Ism Sharif)</span>
                   <input
-                    class="input"
+                    class="form-input"
                     id="student-name"
                     type="text"
                     name="name"
@@ -94,44 +95,44 @@
                     placeholder="Abdullayev Abdulla Abdulla o’g’li"
                     autocomplete="off"
                   />
-                  <span class="msg" id="msgName"></span>
+                  <span class="error" id="msgName"></span>
                 </label>
-
-                <div class="name-box">
-                  <label for="tel" style="position: relative">
-                    Telefon raqam
-                    <input
-                      class="input"
-                      type="tel"
-                      name="tel"
-                      id="tel"
-                      placeholder="+998 00 000-00-00"
-                      autocomplete="off"
-                    />
-                    <span class="msg" id="msgTel"></span>
-                  </label>
-                </div>
               </div>
 
-              <label for="university">
-                OTM
+              <div class="form-group">
+                <label for="tel" style="position: relative">
+                  <span>Telefon raqam</span>
+                  <input
+                    class="form-input"
+                    type="tel"
+                    name="tel"
+                    id="tel"
+                    placeholder="+998 00 000-00-00"
+                    autocomplete="off"
+                  />
+                  <span class="error" id="msgTel"></span>
+                </label>
+              </div>
+
+              <label class="form-label" for="university">
+                <span>OTM</span>
                 <input
-                  class="input"
+                  class="form-input"
                   type="text"
                   name="university"
                   id="university"
                   placeholder="O’zbekiston davlat jahon tillari universiteti"
                   autocomplete="off"
                 />
-                <span class="msg" id="universityMsg"></span>
+                <span class="error" id="universityMsg"></span>
               </label>
 
               <div class="form-wrapper2">
-                <div class="name-box">
+                <div class="form-group">
                   <label for="type" style="position: relative">
-                    Talabalik turi
+                    <span>Talabalik turi</span>
                     <input
-                      class="input"
+                      class="form-input"
                       id="studyDegree"
                       type="text"
                       name="type"
@@ -139,22 +140,22 @@
                       placeholder="Bakalavr"
                       autocomplete="off"
                     />
-                    <span class="msg" id="studyDegreeMsg"></span>
+                    <span class="error" id="studyDegreeMsg"></span>
                   </label>
                 </div>
 
-                <div class="name-box">
+                <div class="form-group">
                   <label for="amount" style="position: relative">
-                    Kontrakt summa
+                    <span>Kontrakt summa</span>
                     <input
-                      class="input"
+                      class="form-input"
                       type="number"
                       name="amount"
                       id="amount"
                       placeholder="Summani kiriting"
                       autocomplete="off"
                     />
-                    <span class="msg" id="amountMsg"></span>
+                    <span class="error" id="amountMsg"></span>
                   </label>
                 </div>
               </div>
@@ -182,7 +183,7 @@
                     stroke-linejoin="round"
                   />
                 </svg>
-                Qo‘shish
+                <span>Qo‘shish</span>
               </button>
             </form>
           </div>

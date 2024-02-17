@@ -43,9 +43,9 @@ filterOptions.forEach(option => {
 });
 
 function filterCards(option) {
-    const cards = document.querySelectorAll('.homiy-card');
+    const cards = document.querySelectorAll('.table-card');
     cards.forEach(card => {
-        const status = card.querySelector('.status-homiy').textContent.trim();
+        const status = card.querySelector('.sponsor-status').textContent.trim();
         if (option === 'Barchasi' || status === option) {
             card.style.display = 'flex';
         } else {
@@ -56,7 +56,8 @@ function filterCards(option) {
 
 });
 
-clearBtn.addEventListener("click", () => {
+clearBtnModal.addEventListener("click", () => {
+    clearBtnModal.classList.remove("disabled");
     filterStudentModal.classList.toggle("hidden");
     overlay.classList.add("hidden");
 })
